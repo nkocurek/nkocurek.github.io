@@ -83,6 +83,31 @@
       color: #7e7e7e;
       line-height: 1;
     }
+
+    .tooltip {
+      position: relative;
+      display: inline-block;
+    }
+
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: rgb(255, 255, 255);
+      color: #000000;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+      
+      /* Position the tooltip */
+      position: absolute;
+      z-index: 1;
+      top: -5px;
+      left: 105%;
+    }
+
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+    }
     </style>
   <title>Nicholas Kocurek</title>
 </head>
@@ -101,7 +126,10 @@
             <p>Contact is nkocurek at andrew dot cmu dot edu.</p>
           </td>
           <td>
-            <img src="profile_pic.jpg" style="width: 100%;">
+            <div class="tooltip">
+              <img src="profile_pic.jpg" style="width: 100%;">
+              <span class="tooltiptext">Picture is at the Shofuso Japanese Culture Center in Philly</span>
+            </div>
           </td>
         </tr>
       </tbody>
