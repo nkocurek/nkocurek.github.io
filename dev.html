@@ -1,0 +1,209 @@
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<style>
+    body {
+        padding: 50px;
+        color: #5e5e5e;
+    }
+
+    h1 {
+      font-family: 'Merriweather Sans';
+      font-size: 24px;
+    }
+
+    h2 {
+      font-family: 'Merriweather Sans';
+      font-size: 20px;
+      padding-left: 1%;
+      border-bottom: 2px;
+      border-color: #5e5e5e;
+    }
+
+    p {
+      font-family: 'Lato', sans-serif;
+      font-size: 18px;
+      padding-left: 2%;
+      line-height: 1.75;
+    }
+
+    a {
+      font-family: 'Lato', sans-serif;
+      font-size: 18px;
+      padding-left: 2%;
+      line-height: 1.75;
+      text-decoration: none;
+      color: rgb(88, 121, 255);
+      display: block;
+    }
+
+    li {
+      font-family: 'Lato', sans-serif;
+      font-size: 18px;
+      padding: 1%;
+      padding-left: 2%;
+      line-height: 1.75;
+    }
+
+    header {
+      margin: auto;
+      width: 50%;
+    }
+
+    div {
+      margin: auto;
+      width: 50%;
+    }
+
+    section {
+      padding: 1%;
+    }
+
+    td {
+      padding: 2%;
+    }
+
+    .publicationtitle {
+      padding: 0;
+      margin: 8px;
+      line-height: 1;
+    }
+
+    .publicationtitle:hover {
+      color: rgb(131, 156, 255);
+    }
+
+    .publicationauthors {
+      padding: 0;
+      margin: 8px;
+      font-size: 16px;
+      color: #7e7e7e;
+      line-height: 1;
+    }
+
+    .publicationform {
+      padding: 0;
+      margin: 8px;
+      font-size: 16px;
+      color: #7e7e7e;
+      line-height: 1;
+    }
+
+    .tooltip {
+      margin: 0;
+      width: 100%;
+      position: relative;
+    }
+
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 150%;
+      background-color: rgb(255, 255, 255);
+      color: #000000;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+      
+      /* Position the tooltip */
+      position: absolute;
+      top:45%;
+      left:105%;
+    }
+
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+    }
+    </style>
+  <title>Nicholas Kocurek</title>
+</head>
+<body>
+  <header>
+    <h1>Nicholas Kocurek</h1>
+    <table>
+      <colgroup>
+        <col style="width: 50%;">
+        <col style="width: 30%;">
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p>I am a 4th year undergraduate student studying Computer Science at Carnegie Mellon.</p>
+            <p>Contact is nkocurek at andrew dot cmu dot edu.</p>
+          </td>
+          <td>
+            <div class="tooltip">
+              <img src="profile_pic.jpg" style="width: 100%;">
+              <span class="tooltiptext">Picture is from the Shofuso Japanese Cultural Center in Philly</span>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </header>
+
+  <div class="container">
+    <section id="research" class="section">
+        <h2>Research</h2>
+        <p>I am broadly interested in theoretical computer science and particularly in beyond worst-case complexity. Recently I've been thinking broadly about the structure of CSPs from a Sum-of-Squares perspective and about how Markov chains mix.</p>
+    </section>
+
+    <section id="writing" class="section">
+        <h2>Publications</h2>
+
+        <ul>
+          <li>
+            <a href="https://nkocurek.github.io/semirandomrefutation.pdf" target="_blank" class="publicationtitle">Strong Refutation of Semirandom 𝑘-LIN over Larger Fields</a>
+            <p class="publicationauthors">with Peter Manohar</p>
+            <p class="publicationform">Manuscript</p>
+          </li>
+          <li>
+            <a href="https://arxiv.org/abs/2409.14614" target="_blank" class="publicationtitle">Faster Mixing of Higher-Dimensional Random Reversible Circuits</a>
+            <p class="publicationauthors">with William Gay and William He</p>
+            <p class="publicationform">In Submission</p>
+          </li>
+        </ul>
+
+        <h2>Other Writings</h2>
+
+        <ul>
+          <li>
+            <a href="https://nkocurek.github.io/streamingstablematchings.pdf" target="_blank" class="publicationtitle">Streaming Stable Matchings</a>
+            <p class="publicationauthors">with Harrison Wiseblatt</p>
+            <p class="publicationform">CMU 15-851 Course Project</p>
+          </li>
+        </ul>
+    </section>
+
+    <section id="teaching" class="section">
+        <h2>Teaching</h2>
+        <p>In Spring 2025, I am TAing 15-251: Great Ideas in Theoretical Science and 15-455: Undergraduate Complexity Theory at CMU.</p>
+        <p>In the past I have TAed:</p>
+        <ul>
+          <li>CMU 15-251: Great Ideas in Theoretical Science (Fall 2022-Fall 2024)</li>
+          <li>CMU 15-252: More Great Ideas in Theoretical Computer Science (Fall 2024)</li>
+          <li>CMU 15-354: Computational Discrete Math (Fall 2024)</li>
+          <li>CMU 15-455: Undergraduate Complexity Theory (Spring 2024)</li>
+        </ul>
+        <p>Along with teaching, I am also a member of CMU School of Computer Science's Student Advisory Council.</p>
+    </section>
+
+    <section id="misc" class="section">
+      <h2>Miscellaneous</h2>
+      <p>I am a big fan of mystery novels, Pittsburgh sports, and playing social deduction and horror games with my friends.</p>
+      <p>Here is a simple diagram explaining the etymology of "kolache" in Texas.</p>
+      <img src="kolache.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+  </section>
+  </div>
+
+  <div class="tooltip">
+    Here is a picture.
+    <span class="tooltiptext"><img src="profile_pic.jpg" style="width: 100%;"></span>
+  </div>
+</body>
+</html>
+
+
