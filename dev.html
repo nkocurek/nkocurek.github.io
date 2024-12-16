@@ -118,20 +118,17 @@
       visibility: visible;
     }
 
-    .imagetooltip {
-      padding: 1%;
-    }
-
     .imagetooltip .tooltipimage {
       visibility: hidden;
-      width: 150%;
-      background-color: rgb(255, 255, 255);
-      color: #000000;
-      text-align: center;
-      
-      /* Position the tooltip */
       position: absolute;
-      top:45%;
+      top: 100%; /* Position below the text */
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 5px;
+      z-index: 10;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     .imagetooltip:hover .tooltipimage {
@@ -216,7 +213,7 @@
       <p>I am a big fan of mystery novels, animation, Pittsburgh sports, and playing social deduction and survival horror games with my friends.</p>
       <p>
         <span class="imagetooltip">Here
-            <span class="tooltipimage"><img src="kolache.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+            <span class="tooltipimage"><img src="kolache.jpg" style="width: 25%;">
             </span>
         </span>
         is a simple diagram explaining the etymology of "kolache" in Texas.</p>
