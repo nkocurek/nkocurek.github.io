@@ -6,7 +6,7 @@
 <style>
     body {
         padding: 50px;
-        color: #5e5e5e;
+        color: #505050;
     }
 
     h1 {
@@ -19,7 +19,7 @@
       font-size: 20px;
       padding-left: 1%;
       border-bottom: 2px;
-      border-color: #5e5e5e;
+      border-color: #505050;
     }
 
     p {
@@ -27,6 +27,11 @@
       font-size: 18px;
       padding-left: 2%;
       line-height: 1.75;
+    }
+
+    .bold {
+      color: #1a1a1a;
+      font-weight: 600;
     }
 
     a {
@@ -39,22 +44,26 @@
       display: block;
     }
 
+    .cleanul {
+      list-style-type: none;
+      padding-left: 1%;
+    }
+
     li {
       font-family: 'Lato', sans-serif;
       font-size: 18px;
       padding: 1%;
-      padding-left: 2%;
       line-height: 1.75;
     }
 
     header {
       margin: auto;
-      width: 50%;
+      width: 65%;
     }
 
     div {
       margin: auto;
-      width: 50%;
+      width: 65%;
     }
 
     section {
@@ -79,7 +88,7 @@
       padding: 0;
       margin: 8px;
       font-size: 16px;
-      color: #7e7e7e;
+      color: #707070;
       line-height: 1;
     }
 
@@ -87,7 +96,7 @@
       padding: 0;
       margin: 8px;
       font-size: 16px;
-      color: #7e7e7e;
+      color: #707070;
       line-height: 1;
     }
 
@@ -98,10 +107,10 @@
     }
 
     .tooltip .tooltiptext {
-      visibility: hidden;
+      display: none;
       width: 150%;
       background-color: rgb(255, 255, 255);
-      color: #000000;
+      color: #202020;
       text-align: center;
       border-radius: 6px;
       padding: 5px 0;
@@ -111,11 +120,41 @@
       /* Position the tooltip */
       position: absolute;
       top:45%;
-      left:105%;
+      left:100%;
     }
 
     .tooltip:hover .tooltiptext {
-      visibility: visible;
+      display: block;
+    }
+
+    .imagetooltip {
+        max-width: 25%;
+    }
+
+    .imagetooltip .tooltipimage {
+      display: none;
+      max-width: 100%; /* Ensure the image doesn't exceed the tooltip width */
+      height: auto; /* Maintain aspect ratio */
+      width: auto; /* Maintain aspect ratio */
+      position: absolute;
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 5px;
+      z-index: 10;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      transform: translateY(-110%);
+    }
+
+    .imagetooltip:hover .tooltipimage {
+      display: block;
+    }
+
+    .imagetooltip {
+      color: rgb(88, 121, 255);
+    }
+
+    .imagetooltip:hover {
+      color: rgb(131, 156, 255);
     }
     </style>
   <title>Nicholas Kocurek</title>
@@ -131,8 +170,8 @@
       <tbody>
         <tr>
           <td>
-            <p>I am a 4th year undergraduate student studying Computer Science at Carnegie Mellon.</p>
-            <p>Contact is nkocurek at andrew dot cmu dot edu.</p>
+            <p>I am a 4th year undergraduate student studying <span class="bold">Computer Science at Carnegie Mellon</span>.</p>
+            <p>Contact is <span class="bold">nkocurek at andrew dot cmu dot edu</span>.</p>
           </td>
           <td>
             <div class="tooltip">
@@ -148,13 +187,13 @@
   <div class="container">
     <section id="research" class="section">
         <h2>Research</h2>
-        <p>I am broadly interested in theoretical computer science and particularly in beyond worst-case complexity. Recently I've been thinking broadly about the structure of CSPs from a Sum-of-Squares perspective and about how Markov chains mix.</p>
+        <p>I am broadly interested in theoretical computer science and particularly in beyond worst-case complexity theory of any kind. Recently I've been thinking about the structure of <span class="bold">CSPs from a Sum-of-Squares perspective</span> and about <span class="bold">how Markov chains mix</span>.</p>
     </section>
 
     <section id="writing" class="section">
         <h2>Publications</h2>
 
-        <ul>
+        <ul class="cleanul">
           <li>
             <a href="https://nkocurek.github.io/semirandomrefutation.pdf" target="_blank" class="publicationtitle">Strong Refutation of Semirandom 𝑘-LIN over Larger Fields</a>
             <p class="publicationauthors">with Peter Manohar</p>
@@ -169,10 +208,9 @@
 
         <h2>Other Writings</h2>
 
-        <ul>
+        <ul class="cleanul">
           <li>
             <a href="https://nkocurek.github.io/streamingstablematchings.pdf" target="_blank" class="publicationtitle">Streaming Stable Matchings</a>
-            <p class="publicationauthors">with Harrison Wiseblatt</p>
             <p class="publicationform">CMU 15-851 Course Project</p>
           </li>
         </ul>
@@ -180,10 +218,10 @@
 
     <section id="teaching" class="section">
         <h2>Teaching</h2>
-        <p>In Spring 2025, I am TAing 15-251: Great Ideas in Theoretical Science and 15-455: Undergraduate Complexity Theory at CMU.</p>
+        <p>In Spring 2025, I am TAing 15-251: Great Ideas in Theoretical Computer Science and 15-455: Undergraduate Complexity Theory at CMU.</p>
         <p>In the past I have TAed:</p>
         <ul>
-          <li>CMU 15-251: Great Ideas in Theoretical Science (Fall 2022-Fall 2024)</li>
+          <li>CMU 15-251: Great Ideas in Theoretical Computer Science (Fall 2022-Fall 2024)</li>
           <li>CMU 15-252: More Great Ideas in Theoretical Computer Science (Fall 2024)</li>
           <li>CMU 15-354: Computational Discrete Math (Fall 2024)</li>
           <li>CMU 15-455: Undergraduate Complexity Theory (Spring 2024)</li>
@@ -194,8 +232,13 @@
     <section id="misc" class="section">
       <h2>Miscellaneous</h2>
       <p>I am a big fan of mystery novels, animation, Pittsburgh sports, and playing social deduction and survival horror games with my friends.</p>
-      <p>Here is a simple diagram explaining the etymology of "kolache" in Texas.</p>
-      <img src="kolache.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+      <p>
+        <span class="imagetooltip">Here
+            <span class="tooltipimage"><img src="kolache.jpg" style="max-width: 25vw;">
+            </span>
+        </span>
+        is a simple diagram explaining the etymology of "kolache" in Texas.</p>
+    </div>
     </section>
   </div>
 </body>
