@@ -52,12 +52,12 @@ li {
 
 header {
     margin: auto;
-    width: 95%;
+    width: 100%;
 }
 
 div {
     margin: auto;
-    width: 95%;
+    width: 100%;
 }
 
 section {
@@ -122,7 +122,7 @@ td {
 }
 
 .imagetooltip {
-    max-width: 25%;
+    max-width: 75%;
 }
 
 .imagetooltip .tooltipimage {
