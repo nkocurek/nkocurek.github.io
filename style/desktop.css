@@ -41,7 +41,7 @@ a {
     line-height: 1.75;
     text-decoration: none;
     color: rgb(50, 0, 110);
-    display: block;
+    display: inline-block;
 }
 
 .cleanul {
@@ -89,6 +89,7 @@ td {
     line-height: 1;
     font-weight: 350;
     color: rgb(196, 18, 48);
+    display: inline-block;
 }
 
 .cmucoursetitle:hover {
