@@ -22,7 +22,7 @@ h2 {
 p {
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 18px;
-    padding-left: 2%;
+    padding-left: 1%;
     line-height: 1.75;
 }
 
@@ -55,12 +55,12 @@ li {
 
 header {
     margin: auto;
-    width: 65%;
+    width: 60%;
 }
 
 div {
     margin: auto;
-    width: 65%;
+    width: 60%;
 }
 
 section {
