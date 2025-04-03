@@ -83,6 +83,18 @@ td {
     font-weight: 350;
 }
 
+.cmucoursetitle {
+    padding: 0;
+    margin: 8px;
+    line-height: 1;
+    font-weight: 350;
+    color: rgb(196, 18, 48);
+}
+
+.cmucoursetitle:hover {
+    color: rgb(195, 86, 104);
+}
+
 .publicationtitle:hover {
     color: rgb(130, 100, 160);
 }
