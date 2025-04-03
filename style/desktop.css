@@ -28,7 +28,7 @@ p {
 
 .bold {
     color: #202020;
-    font-weight: 400;
+    font-weight: 450;
 }
 
 a {
@@ -78,7 +78,7 @@ td {
 }
 
 .publicationtitle:hover {
-    color: rgb(65, 25, 110);
+    color: rgb(80, 50, 110);
 }
 
 .publicationauthors {
@@ -151,5 +151,5 @@ td {
 }
 
 .imagetooltip:hover {
-    color: rgb(65, 25, 110);
+    color: rgb(80, 50, 110);
 }
