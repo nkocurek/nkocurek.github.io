@@ -96,11 +96,23 @@ td {
     margin: 0;
     line-height: 1;
     font-weight: 350;
-    color: rgb(196, 18, 48);
+    color: #990000;
+}
+
+.normallink {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    font-weight: 350;
+    color: rgb(50, 0, 110);
+}
+
+.normallink:hover {
+    color: rgb(130, 100, 160);
 }
 
 .cmucoursetitle:hover {
-    color: rgb(195, 86, 104);
+    color: #904545;
 }
 
 .publicationtitle:hover {
