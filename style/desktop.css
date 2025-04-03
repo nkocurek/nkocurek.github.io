@@ -45,11 +45,14 @@ p {
 
 a {
     font-family: 'Noto Sans JP', sans-serif;
-    font-size: 18px;
-    padding-left: 2%;
-    line-height: 1.75;
-    text-decoration: none;
+    text-decoration: underline;
     color: rgb(50, 0, 110);
+}
+
+a:hover {
+    font-family: 'Noto Sans JP', sans-serif;
+    text-decoration: none;
+    color: rgb(130, 100, 160);
 }
 
 .cleanul {
@@ -89,9 +92,11 @@ td {
     margin: 8px;
     line-height: 1;
     font-weight: 350;
+    text-decoration: none;
+    color: #202020;
 }
 
-.cmucoursetitle {
+.cmu {
     padding: 0;
     margin: 0;
     line-height: 1;
@@ -100,23 +105,11 @@ td {
 }
 
 .normallink {
-    padding: 0;
-    margin: 0;
-    line-height: 1;
-    font-weight: 350;
-    color: rgb(50, 0, 110);
+    color: #202020;
 }
 
 .normallink:hover {
-    color: rgb(130, 100, 160);
-}
-
-.cmucoursetitle:hover {
-    color: #be5757;
-}
-
-.publicationtitle:hover {
-    color: rgb(130, 100, 160);
+    color: #505050;
 }
 
 .publicationauthors {
@@ -164,8 +157,8 @@ td {
 
 .imagetooltip {
     max-width: 25%;
-    color: rgb(50, 0, 110);
-    font-weight: 400;
+    color: #202020;
+    text-decoration: underline;
 }
 
 .imagetooltip .tooltipimage {
@@ -187,5 +180,6 @@ td {
 }
 
 .imagetooltip:hover {
-    color: rgb(130, 100, 160);
+    color: #505050;
+    text-decoration: none;
 }
