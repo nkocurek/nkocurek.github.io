@@ -5,18 +5,20 @@ body {
 
 h1 {
     font-family: 'Ubuntu';
-    font-size: 24px;
+    font-size: 28px;
     border-color: #202020;
     color: #202020;
+    font-weight: 400;
 }
 
 h2 {
     font-family: 'Ubuntu';
-    font-size: 20px;
+    font-size: 24px;
     padding-left: 1%;
     border-bottom: 2px;
     border-color: #202020;
     color: #202020;
+    font-weight: 400;
 }
 
 p {
@@ -24,6 +26,7 @@ p {
     font-size: 18px;
     padding-left: 1%;
     line-height: 1.75;
+    font-weight: 300;
 }
 
 .bold {
@@ -77,6 +80,7 @@ td {
     padding: 0;
     margin: 8px;
     line-height: 1;
+    font-weight: 350;
 }
 
 .publicationtitle:hover {
@@ -128,6 +132,8 @@ td {
 
 .imagetooltip {
     max-width: 25%;
+    color: rgb(50, 0, 110);
+    font-weight: 400;
 }
 
 .imagetooltip .tooltipimage {
@@ -146,10 +152,6 @@ td {
 
 .imagetooltip:hover .tooltipimage {
     display: block;
-}
-
-.imagetooltip {
-    color: rgb(50, 0, 110);
 }
 
 .imagetooltip:hover {
