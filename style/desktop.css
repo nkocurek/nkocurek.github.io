@@ -183,3 +183,17 @@ td {
     color: #505050;
     text-decoration: none;
 }
+
+@media (max-width: 600px) {
+    .tooltip {
+        display: hidden;
+    }
+
+    header {
+        width: 95%;
+    }
+
+    div {
+        width: 95%;
+    }
+  }    
