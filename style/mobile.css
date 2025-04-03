@@ -1,50 +1,69 @@
 body {
     padding: 50px;
-    color: #404040;
+    color: #505050;
+    font-weight: 325;
 }
 
 h1 {
     font-family: 'Ubuntu';
-    font-size: 24px;
+    font-size: 28px;
+    border-color: #202020;
+    color: #202020;
+    font-weight: 400;
 }
 
 h2 {
     font-family: 'Ubuntu';
-    font-size: 20px;
+    font-size: 24px;
     padding-left: 1%;
     border-bottom: 2px;
-    border-color: #000000;
+    border-color: #202020;
+    color: #202020;
+    font-weight: 400;
 }
 
 p {
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 18px;
-    padding-left: 2%;
+    padding-left: 1%;
     line-height: 1.75;
+}
+
+.renderbug {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 18px;
+    padding-left: 1%;
+    line-height: 1.75;
+    color: #505050;
+    font-weight: 325;
 }
 
 .bold {
-    color: #1a1a1a;
-    font-weight: 500;
+    color: #202020;
+    font-weight: 375;
 }
 
 a {
-    font-family: 'Merriweather', sans-serif;
-    font-size: 18px;
-    padding-left: 2%;
-    line-height: 1.75;
-    text-decoration: none;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-decoration: underline;
     color: rgb(50, 0, 110);
-    display: block;
+}
+
+a:hover {
+    font-family: 'Noto Sans JP', sans-serif;
+    text-decoration: none;
+    color: rgb(130, 100, 160);
 }
 
 .cleanul {
     list-style-type: none;
-    padding-left: 1%;
+    padding-left: 0%;
+    margin-top: 2%;
+    margin-bottom: 4%
 }
 
 li {
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 18px;
     padding: 1%;
     line-height: 1.75;
@@ -52,12 +71,12 @@ li {
 
 header {
     margin: auto;
-    width: 100%;
+    width: 60%;
 }
 
 div {
     margin: auto;
-    width: 100%;
+    width: 60%;
 }
 
 section {
@@ -72,17 +91,32 @@ td {
     padding: 0;
     margin: 8px;
     line-height: 1;
+    font-weight: 350;
+    text-decoration: none;
+    color: #202020;
 }
 
-.publicationtitle:hover {
-    color: rgb(51, 0, 111);
+.cmu {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    font-weight: 350;
+    color: #990000;
+}
+
+.normallink {
+    color: #202020;
+}
+
+.normallink:hover {
+    color: #505050;
 }
 
 .publicationauthors {
     padding: 0;
     margin: 8px;
     font-size: 16px;
-    color: #707070;
+    color: #505050;
     line-height: 1;
 }
 
@@ -90,7 +124,7 @@ td {
     padding: 0;
     margin: 8px;
     font-size: 16px;
-    color: #707070;
+    color: #505050;
     line-height: 1;
 }
 
@@ -108,7 +142,7 @@ td {
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 16px;
     
     /* Position the tooltip */
@@ -122,7 +156,9 @@ td {
 }
 
 .imagetooltip {
-    max-width: 100%;
+    max-width: 25%;
+    color: #202020;
+    text-decoration: underline;
 }
 
 .imagetooltip .tooltipimage {
@@ -143,10 +179,7 @@ td {
     display: block;
 }
 
-.imagetooltip {
-    color: rgb(50, 0, 110);
-}
-
 .imagetooltip:hover {
-    color: rgb(51, 0, 111);
+    color: #505050;
+    text-decoration: none;
 }
