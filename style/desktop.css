@@ -29,6 +29,15 @@ p {
     line-height: 1.75;
 }
 
+.renderbug {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 18px;
+    padding-left: 1%;
+    line-height: 1.75;
+    color: #505050;
+    font-weight: 325;
+}
+
 .bold {
     color: #202020;
     font-weight: 375;
