@@ -80,7 +80,7 @@ td {
 }
 
 .publicationtitle:hover {
-    color: rgb(80, 50, 110);
+    color: rgb(130, 100, 160);
 }
 
 .publicationauthors {
@@ -153,5 +153,5 @@ td {
 }
 
 .imagetooltip:hover {
-    color: rgb(80, 50, 110);
+    color: rgb(130, 100, 160);
 }
