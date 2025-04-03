@@ -1,11 +1,12 @@
 body {
     padding: 50px;
-    color: #000000;
+    color: #505050;
 }
 
 h1 {
     font-family: 'Ubuntu';
     font-size: 24px;
+    border-color: #202020;
 }
 
 h2 {
@@ -13,23 +14,23 @@ h2 {
     font-size: 20px;
     padding-left: 1%;
     border-bottom: 2px;
-    border-color: #101010;
+    border-color: #202020;
 }
 
 p {
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 18px;
     padding-left: 2%;
     line-height: 1.75;
 }
 
 .bold {
-    color: #1a1a1a;
+    color: #202020;
     font-weight: 500;
 }
 
 a {
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 18px;
     padding-left: 2%;
     line-height: 1.75;
@@ -44,7 +45,7 @@ a {
 }
 
 li {
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 18px;
     padding: 1%;
     line-height: 1.75;
@@ -75,7 +76,7 @@ td {
 }
 
 .publicationtitle:hover {
-    color: rgb(51, 0, 111);
+    color: rgb(65, 25, 110);
 }
 
 .publicationauthors {
@@ -108,7 +109,7 @@ td {
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 16px;
     
     /* Position the tooltip */
@@ -148,5 +149,5 @@ td {
 }
 
 .imagetooltip:hover {
-    color: rgb(51, 0, 111);
+    color: rgb(65, 25, 110);
 }
