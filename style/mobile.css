@@ -87,6 +87,10 @@ td {
     padding: 2%;
 }
 
+.collapsible {
+    width: 0;
+}
+
 .publicationtitle {
     padding: 0;
     margin: 8px;
@@ -157,7 +161,7 @@ td {
 }
 
 .imagetooltip {
-    max-width: 50%;
+    max-width: 75%;
     color: #202020;
     text-decoration: underline;
 }
