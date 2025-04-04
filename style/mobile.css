@@ -71,12 +71,12 @@ li {
 
 header {
     margin: auto;
-    width: 60%;
+    width: 95%;
 }
 
 div {
     margin: auto;
-    width: 60%;
+    width: 95%;
 }
 
 section {
@@ -132,6 +132,7 @@ td {
     margin: 0;
     width: 100%;
     position: relative;
+    display: none;
 }
 
 .tooltip .tooltiptext {
@@ -152,7 +153,7 @@ td {
 }
 
 .tooltip:hover .tooltiptext {
-    display: block;
+    display: none;
 }
 
 .imagetooltip {
