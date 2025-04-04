@@ -85,7 +85,7 @@ section {
 
 td {
     padding: 2%;
-    width: auto;
+    width: fit-content;
 }
 
 .collapsible {
