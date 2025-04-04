@@ -71,12 +71,12 @@ li {
 
 header {
     margin: auto;
-    width: 95%;
+    width: 99%;
 }
 
 div {
     margin: auto;
-    width: 95%;
+    width: 99%;
 }
 
 section {
@@ -85,6 +85,7 @@ section {
 
 td {
     padding: 2%;
+    width: auto;
 }
 
 .collapsible {
