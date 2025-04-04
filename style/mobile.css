@@ -130,7 +130,7 @@ td {
 
 .tooltip {
     margin: 0;
-    width: 100%;
+    width: 0;
     position: relative;
     display: none;
 }
@@ -157,7 +157,7 @@ td {
 }
 
 .imagetooltip {
-    max-width: 25%;
+    max-width: 50%;
     color: #202020;
     text-decoration: underline;
 }
