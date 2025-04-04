@@ -89,6 +89,7 @@ td {
 
 .collapsible {
     width: 0;
+    display: none;
 }
 
 .publicationtitle {
