@@ -190,3 +190,12 @@ td {
     color: #505050;
     text-decoration: none;
 }
+
+.firstcolumn {
+    width: 100%;
+}
+
+.secondcolumn {
+    width: 0%;
+    display: none;
+}

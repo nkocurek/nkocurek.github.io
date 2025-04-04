@@ -183,3 +183,11 @@ td {
     color: #505050;
     text-decoration: none;
 }
+
+.firstcolumn {
+    width: 50%;
+}
+
+.secondcolumn {
+    width: 30%;
+}
