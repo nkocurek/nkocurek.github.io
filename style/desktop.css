@@ -43,6 +43,14 @@ p {
     font-weight: 375;
 }
 
+.black {
+    color:#101820;
+}
+
+.yellow {
+    color: #FFB612;
+}
+
 a {
     font-family: 'Noto Sans JP', sans-serif;
     text-decoration: underline;
@@ -180,7 +188,7 @@ td {
 }
 
 .imagetooltip:hover {
-    color: #202020;
+    color: #505050;
     text-decoration: none;
 }
 
