@@ -52,7 +52,7 @@ a {
 a:hover {
     font-family: 'Noto Sans JP', sans-serif;
     text-decoration: none;
-    color: rgb(130, 100, 160);
+    color: rgb(50, 0, 110);
 }
 
 .cleanul {
@@ -109,7 +109,7 @@ td {
 }
 
 .normallink:hover {
-    color: #505050;
+    color: #202020;
 }
 
 .publicationauthors {
@@ -180,7 +180,7 @@ td {
 }
 
 .imagetooltip:hover {
-    color: #505050;
+    color: #202020;
     text-decoration: none;
 }
 
@@ -190,4 +190,41 @@ td {
 
 .secondcolumn {
     width: 30%;
+}
+
+.collapsible {
+    display: block;
+}
+
+@media screen and (max-width: 1440px) {
+    .firstcolumn {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .secondcolumn {
+        width: 0%;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .collapsible {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    header {
+        margin: auto;
+        width: 99%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    div {
+        margin: auto;
+        width: 99%;
+    }
 }
