@@ -52,7 +52,7 @@ a {
 a:hover {
     font-family: 'Noto Sans JP', sans-serif;
     text-decoration: none;
-    color: rgb(50, 0, 110);
+    color: rgb(130, 100, 160);
 }
 
 .cleanul {
@@ -109,7 +109,7 @@ td {
 }
 
 .normallink:hover {
-    color: #202020;
+    color: #505050;
 }
 
 .publicationauthors {
