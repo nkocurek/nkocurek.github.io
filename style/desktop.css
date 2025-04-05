@@ -1,24 +1,31 @@
 body {
     padding: 50px;
-    color: #505050;
+    color: #303030;
     font-weight: 325;
 }
 
+.title {
+    color: #101010;
+    text-decoration: none;
+}
+
+.title:hover {
+    color: #101010;
+}
+
 h1 {
-    font-family: 'Ubuntu';
+    font-family: 'Noto Sans JP';
     font-size: 28px;
-    border-color: #202020;
-    color: #202020;
-    font-weight: 400;
+    color: #101010;
+    font-weight: 450;
 }
 
 h2 {
-    font-family: 'Ubuntu';
+    font-family: 'Noto Sans JP';
     font-size: 24px;
     padding-left: 1%;
     border-bottom: 2px;
-    border-color: #202020;
-    color: #202020;
+    color: #101010;
     font-weight: 400;
 }
 
@@ -34,12 +41,12 @@ p {
     font-size: 18px;
     padding-left: 1%;
     line-height: 1.75;
-    color: #505050;
+    color: #303030;
     font-weight: 325;
 }
 
 .bold {
-    color: #202020;
+    color: #101010;
     font-weight: 375;
 }
 
@@ -101,7 +108,7 @@ td {
     line-height: 1;
     font-weight: 350;
     text-decoration: none;
-    color: #202020;
+    color: #101010;
 }
 
 .cmu {
@@ -113,18 +120,18 @@ td {
 }
 
 .normallink {
-    color: #202020;
+    color: #101010;
 }
 
 .normallink:hover {
-    color: #505050;
+    color: #303030;
 }
 
 .publicationauthors {
     padding: 0;
     margin: 8px;
     font-size: 16px;
-    color: #505050;
+    color: #303030;
     line-height: 1;
 }
 
@@ -132,7 +139,7 @@ td {
     padding: 0;
     margin: 8px;
     font-size: 16px;
-    color: #505050;
+    color: #303030;
     line-height: 1;
 }
 
@@ -146,7 +153,7 @@ td {
     display: none;
     width: 150%;
     background-color: rgb(255, 255, 255);
-    color: #202020;
+    color: #101010;
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
@@ -165,7 +172,7 @@ td {
 
 .imagetooltip {
     max-width: 25%;
-    color: #202020;
+    color: #101010;
     text-decoration: underline;
 }
 
@@ -188,8 +195,20 @@ td {
 }
 
 .imagetooltip:hover {
-    color: #505050;
+    color: #303030;
     text-decoration: none;
+}
+
+.button {
+  background-color: white;
+  border: none;
+  color: #303030;
+  padding: 0;
+  cursor: pointer;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 18px;
+  line-height: 1.75;
+  font-weight: 325;
 }
 
 .firstcolumn {
