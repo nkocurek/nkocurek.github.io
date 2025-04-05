@@ -211,6 +211,10 @@ td {
   font-weight: 325;
 }
 
+.animate {
+    display: none;
+}
+
 .firstcolumn {
     width: 50%;
 }
