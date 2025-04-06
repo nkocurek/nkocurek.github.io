@@ -70,11 +70,6 @@ a:hover {
     color: rgb(130, 100, 160);
 }
 
-hr {
-    border-color: #a0a0a0;
-    color: #a0a0a0;
-}
-
 .cleanul {
     list-style-type: none;
     padding-left: 0%;
