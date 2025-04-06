@@ -255,3 +255,17 @@ td {
         width: 99%;
     }
 }
+
+#misc-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1440px) {
+    #misc-mobile {
+        display: block;
+    }
+
+    #misc-desk {
+        display: none;
+    }
+}
