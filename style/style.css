@@ -223,33 +223,33 @@ td {
     display: block;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1080px) {
     .firstcolumn {
         width: 100%;
     }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1080px) {
     .secondcolumn {
         width: 0%;
         display: none;
     }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1080px) {
     .collapsible {
         display: none;
     }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1080px) {
     header {
         margin: auto;
         width: 99%;
     }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1080px) {
     div {
         margin: auto;
         width: 99%;
@@ -260,7 +260,7 @@ td {
     display: none;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1080px) {
     #misc-mobile {
         display: block;
     }
