@@ -50,6 +50,10 @@ p {
     font-weight: 375;
 }
 
+.boldlink {
+    font-weight: 350;
+}
+
 .black {
     color:#101820;
 }
