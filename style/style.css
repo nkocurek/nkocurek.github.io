@@ -283,3 +283,21 @@ td {
         display: none;
     }
 }
+
+#desk-header {
+        display: block;
+}
+
+#mobile-header {
+    display: none;
+}
+
+@media screen and (max-width: 1080px) {
+    #desk-header {
+        display: none;
+    }
+
+    #mobile-header {
+        display: block;
+    }
+}
