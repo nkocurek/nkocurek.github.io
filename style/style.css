@@ -64,12 +64,12 @@ p {
 
 .code {
     font-family: 'Noto Sans Mono', monospace;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
     color: rgb(50, 0, 110);
     font-weight: 325;
     background-color: #f8f8f8;
-    padding: 0.75% 0.5%;
+    padding: 0.5% 0.5%;
 }
 
 a {
