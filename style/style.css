@@ -14,14 +14,14 @@ body {
 }
 
 h1 {
-    font-family: 'Kanchenjunga', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
     font-size: 28px;
     color: #101010;
     font-weight: 450;
 }
 
 h2 {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
     font-size: 24px;
     padding-left: 1%;
     border-bottom: 2px;
@@ -300,4 +300,8 @@ td {
     #mobile-header {
         display: block;
     }
+}
+
+#mobile-h2 {
+    font-size: 32px;
 }
