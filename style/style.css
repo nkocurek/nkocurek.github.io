@@ -7,6 +7,7 @@ body {
 .title {
     color: #101010;
     text-decoration: none;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 .title:hover {
