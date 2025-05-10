@@ -80,7 +80,6 @@ a {
 }
 
 a:hover {
-    font-family: 'Noto Sans JP', sans-serif;
     text-decoration: none;
     color: rgb(130, 100, 160);
 }
