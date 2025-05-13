@@ -1,7 +1,18 @@
 body {
-    padding: 50px;
+    padding: 0px;
+    margin: 0px;
     color: #303030;
     font-weight: 325;
+}
+
+.main-body {
+    margin: 8px;
+    padding: 50px;
+    width: auto;
+}
+
+footer {
+    background-color: #f8f8f8;
 }
 
 .title {
@@ -304,4 +315,11 @@ td {
 
 #mobile-h2 {
     font-size: 36px;
+}
+
+.footer {
+    margin: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #f8f8f8;
 }

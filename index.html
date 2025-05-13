@@ -14,16 +14,7 @@
     var inv = document.getElementById("invincible");
     var spv = document.getElementById("spiderverse");
     if (arc.style.display === "none" && drs.style.display === "none" && inv.style.display === "none" && spv.style.display === "none") {
-      var num = Math.floor(Math.random() * 4);
-      if (num == 0) {
-        arc.style.display = "block";
-      } else if (num == 1) {
-        drs.style.display = "block";
-      } else if (num == 2) {
-        inv.style.display = "block";
-      } else {
-        spv.style.display = "block";
-      }
+      reroll()
     } else {
       arc.style.display = "none";
       drs.style.display = "none";
@@ -33,9 +24,33 @@
   } 
 </script>
 
+<script>
+  function reroll() {
+    var arc = document.getElementById("arcane");
+    var drs = document.getElementById("drstone");
+    var inv = document.getElementById("invincible");
+    var spv = document.getElementById("spiderverse");
+    arc.style.display = "none";
+    drs.style.display = "none";
+    inv.style.display = "none";
+    spv.style.display = "none";
+    var num = Math.floor(Math.random() * 4);
+    if (num == 0) {
+      arc.style.display = "block";
+    } else if (num == 1) {
+      drs.style.display = "block";
+    } else if (num == 2) {
+      inv.style.display = "block";
+    } else {
+      spv.style.display = "block";
+    }
+  } 
+</script>
+
 <title>Nicholas Kocurek</title>
 </head>
 <body>
+  <div class="main-body">
   <header id="desk-header">
     <h1><a href="https://nkocurek.github.io/" class="title">Nicholas Kocurek</a></h1>
     <table>
@@ -115,10 +130,10 @@
       <p>I am a big fan of <button class="button" onclick="showOrHide()">animation (broadly defined)</button>, 
         <span class="black">P</span><span class="yellow">i</span><span class="black">t</span><span class="yellow">t</span><span class="black">s</span><span class="yellow">b</span><span class="black">u</span><span class="yellow">r</span><span class="black">g</span><span class="yellow">h</span> <span class="black">s</span><span class="yellow">p</span><span class="black">o</span><span class="yellow">r</span><span class="black">t</span><span class="yellow">s</span>, <a href="https://en.wikipedia.org/wiki/Analysis_of_Boolean_functions#Kahn%E2%80%93Kalai%E2%80%93Linial_theorem" target="_blank" class="normallink">social deduction games</a>, and mystery novels.</p>
         <div>
-            <img id="arcane" src="media/arcane.png" style="display: none; margin-left: auto; margin-right: auto; width: 80%; ">
-            <img id="drstone" src="media/dr_stone.jpg" style="display: none; margin-left: auto; margin-right: auto; width: 80%; ">
-            <img id="invincible" src="media/invincible.jpg" style="display: none; margin-left: auto; margin-right: auto; width: 80%; ">
-            <img id="spiderverse" src="media/spiderverse.png" style="display: none; margin-left: auto; margin-right: auto; width: 80%; ">
+            <img id="arcane" src="media/arcane.png" style="display: none; margin-left: auto; margin-right: auto; width: 80%; " onclick="reroll()">
+            <img id="drstone" src="media/dr_stone.jpg" style="display: none; margin-left: auto; margin-right: auto; width: 80%; " onclick="reroll()">
+            <img id="invincible" src="media/invincible.jpg" style="display: none; margin-left: auto; margin-right: auto; width: 80%; " onclick="reroll()">
+            <img id="spiderverse" src="media/spiderverse.png" style="display: none; margin-left: auto; margin-right: auto; width: 80%; " onclick="reroll()">
         </div>
       <p class="collapsible">
         <span class="imagetooltip">Here<span class="tooltipimage"><img src="media/kolache.jpg" style="max-width: 25vw;"></span></span> is a simple diagram explaining the strange etymology of "kolache" in Texas.</p>
@@ -132,6 +147,10 @@
         <span class="imagetooltip">Here<span class="tooltipimage"><img src="media/kolache.jpg" style="max-width: 25vw;"></span></span> is a simple diagram explaining the strange etymology of "kolache" in Texas.</p>
     </section>
   </div>
+</div>
+<footer>
+  <div class="footer"></div>
+</footer>
 </body>
 </html>
 
