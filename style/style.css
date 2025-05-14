@@ -11,6 +11,12 @@ body {
     width: auto;
 }
 
+@media screen and (max-width: 1080px) {
+    .main-body {
+        padding: 0px;
+    }
+}
+
 footer {
     background-color: #f8f8f8;
 }
