@@ -2,7 +2,7 @@ body {
     padding: 0px;
     margin: 0px;
     color: #303030;
-    font-weight: 325;
+    font-weight: 300;
 }
 
 .main-body {
@@ -34,7 +34,7 @@ footer {
 h1 {
     font-size: 28px;
     color: #101010;
-    font-weight: 450;
+    font-weight: 400;
 }
 
 h2 {
@@ -43,7 +43,7 @@ h2 {
     padding-left: 1%;
     border-bottom: 2px;
     color: #101010;
-    font-weight: 450;
+    font-weight: 400;
 }
 
 p {
@@ -59,12 +59,12 @@ p {
     padding-left: 1%;
     line-height: 1.75;
     color: #303030;
-    font-weight: 325;
+    font-weight: 300;
 }
 
 .bold {
     color: #101010;
-    font-weight: 375;
+    font-weight: 350;
 }
 
 .boldlink {
@@ -145,7 +145,7 @@ td {
     padding: 0;
     margin: 0;
     line-height: 1;
-    font-weight: 350;
+    font-weight: 325;
     color: #990000;
 }
 
