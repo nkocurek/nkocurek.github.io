@@ -24,7 +24,7 @@ footer {
 .title {
     color: #101010;
     text-decoration: none;
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 .title:hover {
@@ -32,19 +32,18 @@ footer {
 }
 
 h1 {
-    font-family: 'Merriweather Sans', sans-serif;
     font-size: 28px;
     color: #101010;
-    font-weight: 400;
+    font-weight: 450;
 }
 
 h2 {
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 24px;
     padding-left: 1%;
     border-bottom: 2px;
     color: #101010;
-    font-weight: 375;
+    font-weight: 450;
 }
 
 p {
