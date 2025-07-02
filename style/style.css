@@ -5,7 +5,7 @@ body {
     font-weight: 300;
 }
 
-.main-body {
+#main-body {
     margin: 8px;
     padding: 50px;
     width: auto;
@@ -21,13 +21,19 @@ footer {
     background-color: #f8f8f8;
 }
 
-.title {
+#title {
     color: #101010;
     text-decoration: none;
     font-family: 'Noto Sans JP', sans-serif;
 }
 
-.title:hover {
+@media screen and (max-width: 1080px) {
+    #title {
+        font-family: 'Noto Sans JP';
+    }
+}
+
+#title:hover {
     color: #101010;
 }
 
@@ -44,6 +50,12 @@ h2 {
     border-bottom: 2px;
     color: #101010;
     font-weight: 400;
+}
+
+@media screen and (max-width: 1080px) {
+    h2 {
+        font-family: 'Noto Sans JP';
+    }
 }
 
 p {
