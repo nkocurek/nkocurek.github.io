@@ -47,6 +47,21 @@
   } 
 </script>
 
+<script>
+  function switch_mode() {
+    if (!document.body.classList.contains("darkmode")) {
+      document.body.classList.add("darkmode");
+      document.getElementById("moon").style.display = "none";
+      document.getElementById("sun").style.display = "block";
+    }
+    else {
+      document.body.classList.remove("darkmode");
+      document.getElementById("moon").style.display = "block";
+      document.getElementById("sun").style.display = "none";
+    }
+  }
+</script>
+
 <title>Nicholas Kocurek</title>
 </head>
 <body>
@@ -160,7 +175,12 @@
   </div>
 </div>
 <footer>
-  <div class="footer"></div>
+  <div class="footer">
+    <button id="switch" onclick="switch_mode()">
+      <img id="moon" class="icon" src="media/mercury_3590576.png">
+      <img id="sun" class="icon" src="media/sun_3590860.png" style="display: none">
+    </button>
+  </div>
 </footer>
 </body>
 </html>

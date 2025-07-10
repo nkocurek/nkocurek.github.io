@@ -1,7 +1,32 @@
+:root {
+    --background-color: white;
+    --base-text-color: #303030;
+    --title-color: #101010;
+    --footer-color: #f8f8f8;
+    --steelers-black: #101820;
+    --steelers-yellow: #FFB612;
+    --uw-purple: rgb(50, 0, 110);
+    --uw-lightpurple: rgb(130, 100, 160);
+    --cmu-red: #990000;
+}
+
+.darkmode {
+    --background-color: #161616;
+    --base-text-color: #A0A0A0;
+    --title-color: #D0D0D0;
+    --footer-color: #222;
+    --steelers-black: #a5acaf;
+    --steelers-yellow: #FFB612;
+    --uw-purple: rgb(130, 100, 160);
+    --uw-lightpurple: rgb(130, 100, 160);
+    --cmu-red: #990000;
+}
+
 body {
     padding: 0px;
     margin: 0px;
-    color: #303030;
+    background-color: var(--background-color);
+    color: var(--base-text-color);
     font-weight: 300;
 }
 
@@ -18,11 +43,11 @@ body {
 }
 
 footer {
-    background-color: #f8f8f8;
+    background-color: var(--footer-color);
 }
 
 #title {
-    color: #101010;
+    color: var(--title-color);
     text-decoration: none;
     font-family: 'Noto Sans JP', sans-serif;
 }
@@ -34,12 +59,12 @@ footer {
 }
 
 #title:hover {
-    color: #101010;
+    color: var(--title-color);
 }
 
 h1 {
     font-size: 28px;
-    color: #101010;
+    color: var(--title-color);
     font-weight: 400;
 }
 
@@ -48,7 +73,7 @@ h2 {
     font-size: 24px;
     padding-left: 1%;
     border-bottom: 2px;
-    color: #101010;
+    color: var(--title-color);
     font-weight: 400;
 }
 
@@ -70,12 +95,12 @@ p {
     font-size: 18px;
     padding-left: 1%;
     line-height: 1.75;
-    color: #303030;
+    color: var(--base-text-color);
     font-weight: 300;
 }
 
 .bold {
-    color: #101010;
+    color: var(--title-color);
     font-weight: 350;
 }
 
@@ -84,32 +109,32 @@ p {
 }
 
 .black {
-    color:#101820;
+    color: var(--steelers-black);
 }
 
 .yellow {
-    color: #FFB612;
+    color: var(--steelers-yellow);
 }
 
 .code {
     font-family: 'Noto Sans Mono', monospace;
     font-size: 16px;
     line-height: 1.5;
-    color: rgb(50, 0, 110);
+    color: var(--uw-purple);
     font-weight: 325;
-    background-color: #f8f8f8;
+    background-color: var(--footer-color);
     padding: 0.5% 0.5%;
 }
 
 a {
     font-family: 'Noto Sans JP', sans-serif;
     text-decoration: underline;
-    color: rgb(50, 0, 110);
+    color: var(--uw-purple);
 }
 
 a:hover {
     text-decoration: none;
-    color: rgb(130, 100, 160);
+    color: var(--uw-lightpurple);
 }
 
 .cleanul {
@@ -150,7 +175,7 @@ td {
     line-height: 1;
     font-weight: 350;
     text-decoration: none;
-    color: #101010;
+    color: var(--title-color);
 }
 
 .cmu {
@@ -158,22 +183,22 @@ td {
     margin: 0;
     line-height: 1;
     font-weight: 325;
-    color: #990000;
+    color: var(--cmu-red);
 }
 
 .normallink {
-    color: #101010;
+    color: var(--title-color);
 }
 
 .normallink:hover {
-    color: #303030;
+    color: var(--base-text-color);
 }
 
 .publicationauthors {
     padding: 0;
     margin: 8px;
     font-size: 16px;
-    color: #303030;
+    color: var(--base-text-color);
     line-height: 1;
 }
 
@@ -181,7 +206,7 @@ td {
     padding: 0;
     margin: 8px;
     font-size: 16px;
-    color: #303030;
+    color: var(--base-text-color);
     line-height: 1;
 }
 
@@ -194,7 +219,7 @@ td {
 .tooltip .tooltiptext {
     display: none;
     width: 150%;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--background-color);
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
@@ -213,7 +238,7 @@ td {
 
 .imagetooltip {
     max-width: 25%;
-    color: #101010;
+    color: var(--title-color);
     text-decoration: underline;
 }
 
@@ -223,8 +248,8 @@ td {
     height: auto; /* Maintain aspect ratio */
     width: auto; /* Maintain aspect ratio */
     position: absolute;
-    background-color: white;
-    border: 1px solid #ccc;
+    background-color: var(--background-color);
+    border: 1px solid var(--footer-color);
     padding: 5px;
     z-index: 10;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -236,14 +261,14 @@ td {
 }
 
 .imagetooltip:hover {
-    color: #303030;
+    color: var(--base-text-color);
     text-decoration: none;
 }
 
 .button {
-  background-color: white;
+  background-color: var(--background-color);
   border: none;
-  color: #303030;
+  color: var(--base-text-color);
   padding: 0;
   cursor: pointer;
   font-family: 'Noto Sans JP', sans-serif;
@@ -337,5 +362,18 @@ td {
     margin: auto;
     padding-top: 3%;
     padding-bottom: 3%;
-    background-color: #f8f8f8;
+    background-color: var(--footer-color);
+    width: 90%;
 }
+
+#switch {
+    width: 10%;
+    background-color: var(--footer-color);
+    border: none;
+}
+
+.icon {
+    width: 20%;
+    display: block;
+}
+
