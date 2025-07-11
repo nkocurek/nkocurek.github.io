@@ -5,21 +5,18 @@
     --footer-color: #f8f8f8;
     --steelers-black: #101820;
     --steelers-yellow: #FFB612;
-    --uw-purple: rgb(50, 0, 110);
-    --uw-lightpurple: rgb(130, 100, 160);
+    --uw-purple: #32006e;
     --cmu-red: #990000;
 }
 
 .darkmode {
     --background-color: #161616;
     --base-text-color: #A0A0A0;
-    --title-color: #D0D0D0;
+    --title-color: #b9b9b9;
     --footer-color: #222;
     --steelers-black: #a5acaf;
-    --steelers-yellow: #FFB612;
-    --uw-purple: rgb(130, 100, 160);
-    --uw-lightpurple: rgb(130, 100, 160);
-    --cmu-red: #990000;
+    --uw-purple: #b597d9;
+    --cmu-red: #ff5f5f;
 }
 
 body {
@@ -52,16 +49,6 @@ footer {
     font-family: 'Noto Sans JP', sans-serif;
 }
 
-@media screen and (max-width: 1080px) {
-    #title {
-        font-family: 'Noto Sans JP';
-    }
-}
-
-#title:hover {
-    color: var(--title-color);
-}
-
 h1 {
     font-size: 28px;
     color: var(--title-color);
@@ -75,12 +62,6 @@ h2 {
     border-bottom: 2px;
     color: var(--title-color);
     font-weight: 400;
-}
-
-@media screen and (max-width: 1080px) {
-    h2 {
-        font-family: 'Noto Sans JP';
-    }
 }
 
 p {
@@ -134,7 +115,6 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: var(--uw-lightpurple);
 }
 
 .cleanul {
@@ -188,10 +168,6 @@ td {
 
 .normallink {
     color: var(--title-color);
-}
-
-.normallink:hover {
-    color: var(--base-text-color);
 }
 
 .publicationauthors {
@@ -261,14 +237,13 @@ td {
 }
 
 .imagetooltip:hover {
-    color: var(--base-text-color);
     text-decoration: none;
 }
 
 .button {
   background-color: var(--background-color);
   border: none;
-  color: var(--base-text-color);
+  color: var(--title-color);
   padding: 0;
   cursor: pointer;
   font-family: 'Noto Sans JP', sans-serif;
