@@ -47,21 +47,6 @@
   } 
 </script>
 
-<script>
-  function switch_mode() {
-    if (!document.body.classList.contains("darkmode")) {
-      document.body.classList.add("darkmode");
-      document.getElementById("moon").style.display = "block";
-      document.getElementById("sun").style.display = "none";
-    }
-    else {
-      document.body.classList.remove("darkmode");
-      document.getElementById("moon").style.display = "none";
-      document.getElementById("sun").style.display = "block";
-    }
-  }
-</script>
-
 <title>Nicholas Kocurek</title>
 </head>
 <body>
@@ -176,10 +161,6 @@
 </div>
 <footer>
   <div class="footer">
-    <button id="switch" onclick="switch_mode()">
-      <p id="moon" class="icon" style="display: none;">🌑</p>
-      <p id="sun" class="icon">☀️</p>
-    </button>
   </div>
 </footer>
 </body>
