@@ -348,7 +348,10 @@ td {
 }
 
 .icon {
-    width: 25;
+    width: 30;
     display: block;
 }
 
+#moon {
+    filter: brightness(7.5);
+}
