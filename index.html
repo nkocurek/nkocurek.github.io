@@ -51,13 +51,13 @@
   function switch_mode() {
     if (!document.body.classList.contains("darkmode")) {
       document.body.classList.add("darkmode");
-      document.getElementById("moon").style.display = "none";
-      document.getElementById("sun").style.display = "block";
+      document.getElementById("moon").style.display = "block";
+      document.getElementById("sun").style.display = "none";
     }
     else {
       document.body.classList.remove("darkmode");
-      document.getElementById("moon").style.display = "block";
-      document.getElementById("sun").style.display = "none";
+      document.getElementById("moon").style.display = "none";
+      document.getElementById("sun").style.display = "block";
     }
   }
 </script>
