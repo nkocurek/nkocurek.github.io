@@ -71,15 +71,6 @@ p {
     line-height: 1.75;
 }
 
-.renderbug {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 18px;
-    padding-left: 1%;
-    line-height: 1.75;
-    color: var(--base-text-color);
-    font-weight: 300;
-}
-
 .bold {
     color: var(--title-color);
     font-weight: 350;
@@ -128,7 +119,7 @@ li {
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 18px;
     padding: 1%;
-    line-height: 1.75;
+    line-height: 1.5;
 }
 
 header {
@@ -147,6 +138,7 @@ section {
 
 td {
     padding: 2%;
+    font-weight: 300;
 }
 
 .publicationtitle {
@@ -194,7 +186,7 @@ td {
 
 .tooltip .tooltiptext {
     display: none;
-    width: 150%;
+    width: 100%;
     background-color: var(--background-color);
     text-align: center;
     border-radius: 6px;
@@ -260,10 +252,6 @@ td {
     width: 30%;
 }
 
-.collapsible {
-    display: block;
-}
-
 @media screen and (max-width: 1080px) {
     .firstcolumn {
         width: 100%;
@@ -273,12 +261,6 @@ td {
 @media screen and (max-width: 1080px) {
     .secondcolumn {
         width: 0%;
-        display: none;
-    }
-}
-
-@media screen and (max-width: 1080px) {
-    .collapsible {
         display: none;
     }
 }
@@ -297,40 +279,10 @@ td {
     }
 }
 
-#misc-mobile {
-    display: none;
-}
-
 @media screen and (max-width: 1080px) {
-    #misc-mobile {
-        display: block;
-    }
-
-    #misc-desk {
+    #misc {
         display: none;
     }
-}
-
-#desk-header {
-        display: block;
-}
-
-#mobile-header {
-    display: none;
-}
-
-@media screen and (max-width: 1080px) {
-    #desk-header {
-        display: none;
-    }
-
-    #mobile-header {
-        display: block;
-    }
-}
-
-#mobile-h2 {
-    font-size: 36px;
 }
 
 .footer {
@@ -344,12 +296,4 @@ td {
 #switch {
     background-color: var(--footer-color);
     border: none;
-}
-
-.icon {
-    font-size: 24px;
-    height: auto;
-    padding: 0;
-    margin: 0;
-    line-height: 1.0;
 }
