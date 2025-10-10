@@ -8,26 +8,6 @@
 <link href="style/style.css" rel="stylesheet" type="text/css" media="all">
 
 <script>
-  window.onload = function() {
-    if(localStorage.getItem("darkmode") === null) {
-      if (matchMedia("(prefers-color-scheme: light)").matches) {
-        localStorage.setItem("darkmode", "light");
-      }
-      else {
-        localStorage.setItem("darkmode", "dark");
-      }
-    }
-
-    if(localStorage.getItem("darkmode") === "dark") {
-      document.body.classList.add("darkmode");
-    }
-    else {
-      document.body.classList.remove("darkmode");
-    }
-  }
-</script>
-
-<script>
   function showOrHide() {
     var arc = document.getElementById("arcane");
     var drs = document.getElementById("drstone");
