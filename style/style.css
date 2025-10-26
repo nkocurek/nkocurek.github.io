@@ -213,7 +213,7 @@ td {
 .imagetooltip .tooltipimage {
     display: none;
     max-width: 25%;
-    min-width: 500px;
+    width: 500px;
     height: auto; /* Maintain aspect ratio */
     width: auto; /* Maintain aspect ratio */
     position: absolute;
@@ -297,15 +297,15 @@ td {
 .animation {
     display: none; 
     margin-left: auto; 
-    margin-right: auto; 
-    width: 80%;
-    min-width: 400px;
+    margin-right: auto;
+    width: 400px;
+    max-width: 80%;
 }
 
 @media screen and (max-width: 1080px) {
     .animation {
-        width: 60%;
-        max-width: 400px;
+        max-width: 60%;
+        width: 400px;
     }
 }
 
