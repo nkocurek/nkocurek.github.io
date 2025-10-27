@@ -274,7 +274,7 @@ td {
 
 .secondcolumn {
     width: 30%;
-    min-width: 400px;
+    min-width: 375px;
 }
 
 @media screen and (max-width: 1080px) {
@@ -291,8 +291,7 @@ td {
 
 @media screen and (max-width: 1080px) {
     .secondcolumn {
-        width: 50%;
-        min-width: 0px;
+        display: none;
     }
 }
 
