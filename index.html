@@ -13,13 +13,15 @@
     var drs = document.getElementById("drstone");
     var inv = document.getElementById("invincible");
     var spv = document.getElementById("spiderverse");
-    if (arc.style.display === "none" && drs.style.display === "none" && inv.style.display === "none" && spv.style.display === "none") {
+    var kdh = document.getElementById("kpop");
+    if (arc.style.display === "none" && drs.style.display === "none" && inv.style.display === "none" && spv.style.display === "none" && kdh.style.display === "none") {
       reroll()
     } else {
       arc.style.display = "none";
       drs.style.display = "none";
       inv.style.display = "none";
       spv.style.display = "none";
+      kdh.style.display = "none";
     }
   } 
 </script>
@@ -30,19 +32,23 @@
     var drs = document.getElementById("drstone");
     var inv = document.getElementById("invincible");
     var spv = document.getElementById("spiderverse");
+    var kdh = document.getElementById("kpop");
     arc.style.display = "none";
     drs.style.display = "none";
     inv.style.display = "none";
     spv.style.display = "none";
-    var num = Math.floor(Math.random() * 4);
+    kdh.style.display = "none";
+    var num = Math.floor(Math.random() * 5);
     if (num == 0) {
       arc.style.display = "block";
     } else if (num == 1) {
       drs.style.display = "block";
     } else if (num == 2) {
       inv.style.display = "block";
-    } else {
+    } else if (num == 3) {
       spv.style.display = "block";
+    } else {
+      kdh.style.display = "block";
     }
   } 
 </script>
@@ -141,10 +147,11 @@
       <p>I am a big fan of <button class="button" onclick="showOrHide()">animation</button>, 
         <span class="black">P</span><span class="yellow">i</span><span class="black">t</span><span class="yellow">t</span><span class="black">s</span><span class="yellow">b</span><span class="black">u</span><span class="yellow">r</span><span class="black">g</span><span class="yellow">h</span> <span class="black">s</span><span class="yellow">p</span><span class="black">o</span><span class="yellow">r</span><span class="black">t</span><span class="yellow">s</span>, <a href="https://en.wikipedia.org/wiki/Analysis_of_Boolean_functions#Kahn%E2%80%93Kalai%E2%80%93Linial_theorem" class="normallink">social deduction games</a>, and mystery novels.</p>
         <div>
-            <img id="arcane" src="media/arcane.png" class="animation" style="display: none;" onclick="reroll()">
+            <img id="arcane" src="media/arcane.jpg" class="animation" style="display: none;" onclick="reroll()">
             <img id="drstone" src="media/dr_stone.jpg" class="animation" style="display: none;" onclick="reroll()">
             <img id="invincible" src="media/invincible.jpg" class="animation" style="display: none;" onclick="reroll()">
             <img id="spiderverse" src="media/spiderverse.png" class="animation" style="display: none;" onclick="reroll()">
+            <img id="kpop" src="media/kpopdemonhunters.jpg" class="animation" style="display: none;" onclick="reroll()">
         </div>
       <p>I pronounce my last name "koh-sir-ick".</p>
       <p>
