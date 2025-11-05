@@ -196,8 +196,8 @@ td {
     
     /* Position the tooltip */
     position: absolute;
-    top:45%;
-    left:100%;
+    top: 45%;
+    left: 95%;
 }
 
 .tooltip:hover .tooltiptext {
