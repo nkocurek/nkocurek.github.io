@@ -100,12 +100,12 @@ p {
 
 a {
     font-family: 'Noto Sans JP', sans-serif;
-    text-decoration: underline;
+    text-decoration: none;
     color: var(--uw-purple);
 }
 
 a:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .cleanul {
@@ -160,6 +160,7 @@ td {
 
 .normallink {
     color: var(--title-color);
+    font-weight: 300;
 }
 
 .publicationauthors {
