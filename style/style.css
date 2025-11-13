@@ -163,6 +163,24 @@ td {
     font-weight: 300;
 }
 
+.funlink {
+    color: var(--title-color);
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+.funlink:hover {
+    text-decoration: none;
+}
+
+.funpurplelink {
+    text-decoration: underline;
+}
+
+.funpurplelink:hover {
+    text-decoration: none;
+}
+
 .publicationauthors {
     padding: 0;
     margin: 8px;
