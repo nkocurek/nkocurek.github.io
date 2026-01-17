@@ -9,47 +9,37 @@
 
 <script>
   function showOrHide() {
-    var arc = document.getElementById("arcane");
-    var drs = document.getElementById("drstone");
-    var inv = document.getElementById("invincible");
-    var spv = document.getElementById("spiderverse");
-    var kdh = document.getElementById("kpop");
-    if (arc.style.display === "none" && drs.style.display === "none" && inv.style.display === "none" && spv.style.display === "none" && kdh.style.display === "none") {
+    const names = ["arcane", "invincible", "spiderverse", "drstone", "kpop", "frieren"];
+    var elems = Array();
+    for (let i = 0; i < names.length; i++) {
+      elems.push(document.getElementById(names[i]));
+    }
+    var inactive = true;
+    for (let i = 0; i < elems.length; i++) {
+      inactive = inactive && (elems[i].style.display === "none");
+    }
+    if (inactive) {
       reroll()
     } else {
-      arc.style.display = "none";
-      drs.style.display = "none";
-      inv.style.display = "none";
-      spv.style.display = "none";
-      kdh.style.display = "none";
+      for (let i = 0; i < elems.length; i++) {
+        elems[i].style.display = "none";
+      }
     }
   } 
 </script>
 
 <script>
   function reroll() {
-    var arc = document.getElementById("arcane");
-    var drs = document.getElementById("drstone");
-    var inv = document.getElementById("invincible");
-    var spv = document.getElementById("spiderverse");
-    var kdh = document.getElementById("kpop");
-    arc.style.display = "none";
-    drs.style.display = "none";
-    inv.style.display = "none";
-    spv.style.display = "none";
-    kdh.style.display = "none";
-    var num = Math.floor(Math.random() * 5);
-    if (num == 0) {
-      arc.style.display = "block";
-    } else if (num == 1) {
-      drs.style.display = "block";
-    } else if (num == 2) {
-      inv.style.display = "block";
-    } else if (num == 3) {
-      spv.style.display = "block";
-    } else {
-      kdh.style.display = "block";
+    const names = ["arcane", "invincible", "spiderverse", "drstone", "kpop", "frieren"];
+    var elems = Array();
+    for (let i = 0; i < names.length; i++) {
+      elems.push(document.getElementById(names[i]));
     }
+    for (let i = 0; i < elems.length; i++) {
+        elems[i].style.display = "none";
+      }
+    var num = Math.floor(Math.random() * elems.length);
+    elems[num].style.display = "block";
   } 
 </script>
 
@@ -157,6 +147,7 @@
             <img id="invincible" src="media/invincible.jpg" class="animation" style="display: none;" onclick="reroll()">
             <img id="spiderverse" src="media/spiderverse.png" class="animation" style="display: none;" onclick="reroll()">
             <img id="kpop" src="media/kpopdemonhunters.jpg" class="animation" style="display: none;" onclick="reroll()">
+            <img id="frieren" src="media/frieren.jpg" class="animation" style="display: none;" onclick="reroll()">
         </div>
       <p>I pronounce my last name "koh-sir-ick".</p>
       <p>
