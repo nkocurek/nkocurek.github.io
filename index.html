@@ -45,15 +45,13 @@
 
 <script>
   function collapse(elem0, elem1) {
-    if (window.screen.width >= 1530) {
-      contactinfo = document.getElementById(elem0);
-      if (contactinfo.style.display === "none") {
-        contactinfo.style.display = "block";
-      } else {
-        contactinfo.style.display = "none";
-      }
-      document.getElementById(elem1).classList.toggle("close");
+    contactinfo = document.getElementById(elem0);
+    if (contactinfo.style.display === "none") {
+      contactinfo.style.display = "block";
+    } else {
+      contactinfo.style.display = "none";
     }
+    document.getElementById(elem1).classList.toggle("close");
   }
 </script>
 
