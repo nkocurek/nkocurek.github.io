@@ -386,13 +386,3 @@ td {
 .collapsible.close::before {
   content: "▸ ";
 }
-
-@media screen and (max-width: 1080px) {
-    .collapsible::before {
-        display: none;
-    }
-
-    .collapsible.close::before {
-        display: none;
-    }
-}
