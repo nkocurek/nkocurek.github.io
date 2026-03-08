@@ -1,8 +1,10 @@
 :root {
     --background-color: white;
+    --background-color-highlight: #fbfbfb;
     --base-text-color: #303030;
     --title-color: #101010;
-    --footer-color: #f8f8f8;
+    --secondary-color: #f9f9f9;
+    --secondary-color-highlight: #f5f5f5;
     --steelers-black: #101820;
     --steelers-yellow: #FFB612;
     --uw-purple: #32006e;
@@ -13,7 +15,7 @@
     --background-color: #161616;
     --base-text-color: #A0A0A0;
     --title-color: #b9b9b9;
-    --footer-color: #222;
+    --secondary-color: #222;
     --steelers-black: #a5acaf;
     --uw-purple: #a98bcdff;
     --cmu-red: #ff5f5f;
@@ -29,7 +31,9 @@ body {
 
 #main-body {
     margin: 8px;
+    margin-bottom: 0%;
     padding: 50px;
+    padding-bottom: 0%;
     width: auto;
 }
 
@@ -40,7 +44,7 @@ body {
 }
 
 footer {
-    background-color: var(--footer-color);
+    background-color: var(--secondary-color);
 }
 
 @media screen and (max-width: 1080px) {
@@ -49,37 +53,72 @@ footer {
     }
 }
 
-#title {
-    color: var(--title-color);
-    text-decoration: none;
-    font-family: 'Noto Sans JP', sans-serif;
-}
-
 h1 {
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 28px;
     color: var(--title-color);
     font-weight: 450;
+    text-decoration: none;
 }
 
 h2 {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 24px;
-    padding-left: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
     border-bottom: 2px;
     color: var(--title-color);
     font-weight: 450;
-    margin-top: 1%;
-    margin-bottom: 2%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    padding-bottom: 0%;
+    padding-top: 2%;
+}
+
+.h2prim {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 24px;
+    color: var(--title-color);
+    font-weight: 450;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    padding: 2%;
+    border: none;
+    width: 100%;
+    text-align: left;
+    background-color: var(--background-color);
+}
+
+.h2sec {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 24px;
+    color: var(--title-color);
+    font-weight: 450;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    padding: 2%;
+    border: none;
+    width: 100%;
+    text-align: left;
+    background-color: var(--secondary-color);
+}
+
+.h2prim:hover {
+    background-color: var(--background-color-highlight);
+}
+
+.h2sec:hover {
+    background-color: var(--secondary-color-highlight);
 }
 
 p {
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 18px;
-    padding-left: 1%;
     line-height: 1.75;
     margin-top: 1%;
     margin-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .bold {
@@ -100,12 +139,11 @@ p {
 }
 
 .code {
-    font-family: 'Noto Sans Mono', monospace;
-    font-size: 16px;
+    font-family: 'Noto Sans JP';
+    font-size: 18px;
     line-height: 1.5;
     color: var(--uw-purple);
-    font-weight: 325;
-    background-color: var(--footer-color);
+    font-weight: 350;
     padding: 0.5% 0.5%;
 }
 
@@ -150,9 +188,8 @@ div {
     width: 55%;
 }
 
-section {
-    padding-left: 1%;
-    padding-right: 1%;
+.secondary {
+    background-color: var(--secondary-color);
 }
 
 .subsection {
@@ -276,7 +313,7 @@ td {
     width: auto; /* Maintain aspect ratio */
     position: absolute;
     background-color: var(--background-color);
-    border: 1px solid var(--footer-color);
+    border: 1px solid var(--secondary-color);
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
     padding: 5px;
     z-index: 10;
@@ -292,7 +329,7 @@ td {
         width: auto; /* Maintain aspect ratio */
         position: absolute;
         background-color: var(--background-color);
-        border: 1px solid var(--footer-color);
+        border: 1px solid var(--secondary-color);
         padding: 5px;
         z-index: 10;
         transform: translateY(-110%);
@@ -373,6 +410,8 @@ td {
     display: none; 
     margin-left: auto; 
     margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
     width: 500px;
     max-width: 100%;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
