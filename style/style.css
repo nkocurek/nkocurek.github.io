@@ -128,7 +128,7 @@ ul {
     list-style-type: none;
     padding-left: 0%;
     margin: 0%;
-    padding-top: 1.5%;
+    padding-top: 2%;
 }
 
 li {
@@ -165,16 +165,6 @@ td {
     font-weight: 300;
 }
 
-.publicationtitle {
-    padding: 0;
-    margin: 8px;
-    margin-bottom: 0px;
-    line-height: 1.5;
-    font-weight: 425;
-    text-decoration: none;
-    color: var(--title-color);
-}
-
 .cmu {
     padding: 0;
     margin: 0;
@@ -206,21 +196,45 @@ td {
     text-decoration: none;
 }
 
-.publicationauthors {
-    padding: 0;
+.publicationtitle {
+    padding: 0px;
     margin: 8px;
-    margin-top: 4px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 1.5;
+    font-weight: 425;
+    text-decoration: none;
+    color: var(--title-color);
+}
+
+.publicationauthors {
+    padding: 0px;
+    margin: 8px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     font-size: 16px;
     color: var(--base-text-color);
-    line-height: 1;
+    line-height: 1.5;
 }
 
 .publicationform {
-    padding: 0;
+    padding: 0px;
     margin: 8px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     font-size: 16px;
     color: var(--base-text-color);
-    line-height: 1;
+    line-height: 1.5;
+}
+
+.publicationlink {
+    padding: 0px;
+    margin: 8px;
+    margin-top: 0px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: var(--base-text-color);
+    line-height: 1.5;
 }
 
 .tooltip {
