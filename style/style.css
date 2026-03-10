@@ -8,6 +8,7 @@
     --steelers-black: #101820;
     --steelers-yellow: #FFB612;
     --uw-purple: #32006e;
+    --uw-purple-secondary: #c5b4e3;
     --cmu-red: #990000;
 }
 
@@ -59,7 +60,6 @@ h1 {
     font-size: 28px;
     color: var(--title-color);
     font-weight: 450;
-    text-decoration: none;
     padding-left: 2%;
 }
 
@@ -68,13 +68,16 @@ h2 {
     font-size: 24px;
     padding-left: 2%;
     padding-right: 2%;
-    border-bottom: 2px;
     color: var(--title-color);
     font-weight: 450;
     margin-bottom: 0%;
     margin-top: 0%;
-    padding-bottom: 0%;
+    padding-bottom: 2%;
     padding-top: 2%;
+    text-decoration: underline;
+    text-decoration-color: var(--uw-purple-secondary);
+    text-decoration-thickness: 4px;
+    text-underline-offset: 8px;
 }
 
 .h2prim {
@@ -199,6 +202,7 @@ div {
 
 td {
     padding: 2%;
+    padding-right: 0%;
     font-weight: 300;
 }
 
