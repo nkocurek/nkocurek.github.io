@@ -144,11 +144,13 @@ p {
 }
 
 .code {
-    font-family: 'Noto Sans JP';
-    font-size: 18px;
+    font-family: 'Noto Sans Mono', monospace;
+    font-size: 16px;
     line-height: 1.5;
     color: var(--uw-purple);
-    font-weight: 350;
+    font-weight: 325;
+    background-color: var(--secondary-color);
+    padding: 0.5% 0.5%;
 }
 
 a {
