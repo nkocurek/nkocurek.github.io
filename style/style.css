@@ -27,6 +27,7 @@ body {
     background-color: var(--background-color);
     color: var(--base-text-color);
     font-weight: 300;
+    text-underline-offset: 4px;
 }
 
 #main-body {
@@ -215,7 +216,7 @@ td {
 }
 
 .funlink {
-    color: var(--title-color);
+    color: var(--base-text-color);
     font-weight: 300;
     text-decoration: underline;
 }
@@ -238,7 +239,7 @@ td {
     margin-top: 0px;
     margin-bottom: 0px;
     line-height: 1.5;
-    font-weight: 425;
+    font-weight: 400;
     text-decoration: none;
     color: var(--title-color);
 }
@@ -347,7 +348,7 @@ td {
 .button {
   background-color: var(--background-color);
   border: none;
-  color: var(--title-color);
+  color: var(--base-text-color);
   padding: 0;
   cursor: pointer;
   font-family: 'Noto Sans JP', sans-serif;
