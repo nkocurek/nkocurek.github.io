@@ -33,11 +33,14 @@
     const names = ["arcane", "invincible", "spiderverse", "drstone", "kpop", "frieren", "apothecary"];
     var elems = Array();
     for (let i = 0; i < names.length; i++) {
-      elems.push(document.getElementById(names[i]));
-    }
-    for (let i = 0; i < elems.length; i++) {
-        elems[i].style.display = "none";
+      elem = document.getElementById(names[i]);
+      if (elem.style.display !== "none") {
+        elem.style.display = "none";
       }
+      else {
+        elems.push(elem);
+      }
+    }
     var num = Math.floor(Math.random() * elems.length);
     elems[num].style.display = "block";
   } 
