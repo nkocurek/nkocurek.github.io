@@ -217,6 +217,14 @@ td {
     color: var(--cmu-red);
 }
 
+.uw {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    font-weight: 325;
+    color: var(--uw-purple);
+}
+
 .normallink {
     color: var(--base-text-color);
     font-weight: 300;
