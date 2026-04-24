@@ -67,6 +67,10 @@ div {
     margin-top: 2%;
 }
 
+#misc {
+    padding-bottom: 8%;
+}
+
 @media screen and (max-width: 1080px) {
     footer {
         background-color: var(--background-color);
