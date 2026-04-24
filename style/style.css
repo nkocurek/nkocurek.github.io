@@ -550,11 +550,3 @@ td {
         width: 500px;
     }
 }
-
-.collapsible::before {
-  content: "▾ ";
-}
-
-.collapsible.close::before {
-  content: "▸ ";
-}
