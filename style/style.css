@@ -59,22 +59,8 @@ div {
     margin: auto;
 }
 
-.footer {
-    background-color: var(--secondary-color);
-    width: 100%;
-    max-width: 100%;
-    padding-bottom: 6%;
-    margin-top: 2%;
-}
-
 #misc {
     padding-bottom: 8%;
-}
-
-@media screen and (max-width: 1080px) {
-    footer {
-        background-color: var(--background-color);
-    }
 }
 
 #title {
