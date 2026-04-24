@@ -6,6 +6,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet">
 <link href="style/style.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
 
 <script>
   function showOrHide() {
@@ -64,8 +66,7 @@
 <body>
   <div id="main-body">
   <header>
-    <img class="zerocolumn shadow" src="media/profile_pic.jpg">
-    <table>
+    <table id="desktoptable">
       <colgroup>
         <col class="firstcolumn">
         <col class="secondcolumn">
@@ -73,83 +74,101 @@
       <tbody>
         <tr>
           <td>
-            <h1 id="title">Nicholas Kocurek</h1>
+            <h1><a id="title" href="https://nkocurek.github.io">Nicholas Kocurek</a></h1>
             <p><span class="code">nichok6[at]cs.washington.edu</span></p>
             <br>
-            <p>I am a first-year CSE PhD student at the <span class="bold">University of Washington</span> <a href="https://www.cs.washington.edu/" class="boldlink">Allen School</a> as part of the <a href="https://theory.cs.washington.edu/" class="boldlink">CS Theory</a> and <a href="https://quantum.cs.washington.edu/" class="boldlink">Quantum CS</a> Groups, where I am fortunate to work with <a href="https://homes.cs.washington.edu/~nirkhe/" class="boldlink">Chinmay Nirkhe</a> and <a href="https://homes.cs.washington.edu/~shayan/" class="boldlink">Shayan Oveis Gharan</a>. Previously, I did my undergraduate at <span class="bold">Carnegie Mellon University</span>.</p>
+            <p>I am a first-year CSE PhD student at the <span class="bold">University of Washington</span> <a href="https://www.cs.washington.edu/" class="boldpurplelink separated">Allen School</a> as part of the <a href="https://theory.cs.washington.edu/" class="boldpurplelink">CS Theory</a> and <a href="https://quantum.cs.washington.edu/" class="boldpurplelink">Quantum CS</a> Groups, where I am fortunate to work with <a href="https://homes.cs.washington.edu/~nirkhe/" class="boldpurplelink">Chinmay Nirkhe</a> and <a href="https://homes.cs.washington.edu/~shayan/" class="boldpurplelink">Shayan Oveis Gharan</a>. Previously, I did my undergraduate at <span class="bold">Carnegie Mellon University</span>.</p>
           </td>
           <td>
             <div class="tooltip">
-              <img class="shadow" src="media/profile_pic.jpg" style="width: 80%; display: block; margin: auto;">
+              <img class="shadow profile" src="media/profile_pic.jpg">
               <span class="tooltiptext">Picture is from the Shofuso Japanese Cultural Center in Philly</span>
             </div>
           </td>
         </tr>
       </tbody>
     </table>
+    <table id="mobiletable">
+      <td>
+        <h1 class="row"><a id="title" href="https://nkocurek.github.io">Nicholas Kocurek</a></h1>
+        <p class="row" id="rowcode"><span class="code">nichok6[at]cs.washington.edu</span></p>
+      </td>
+      <td>
+        <img class="profilepic shadow" src="media/profile_pic.jpg">
+      </td>
+    </table>
+    <p class="row">I am a first-year CSE PhD student at the <span class="bold">University of Washington</span> <a href="https://www.cs.washington.edu/" class="boldpurplelink separated">Allen School</a> as part of the <a href="https://theory.cs.washington.edu/" class="boldpurplelink">CS Theory</a> and <a href="https://quantum.cs.washington.edu/" class="boldpurplelink">Quantum CS</a> Groups, where I am fortunate to work with <a href="https://homes.cs.washington.edu/~nirkhe/" class="boldpurplelink">Chinmay Nirkhe</a> and <a href="https://homes.cs.washington.edu/~shayan/" class="boldpurplelink">Shayan Oveis Gharan</a>. Previously, I did my undergraduate at <span class="bold">Carnegie Mellon University</span>.</p>
   </header>
   <br><br>
 
   <div class="container">
     <section id="research">
         <h2>Research</h2>
-        <p>I am broadly interested in <a href="https://www.pandanotes.org/servers/anil/chapters/What_is_TCS/" class="normallink">theoretical computer science</a> and particularly in classical and quantum complexity theory. Even more specifically, I like to work with CSPs and their quantum and sampling generalizations. Recently, I have been thinking about what makes low energy states of local Hamiltonians complex.</p>
+        <p>I am broadly interested in <a href="https://www.pandanotes.org/servers/anil/chapters/What_is_TCS/" class="normallink">theoretical computer science</a> and particularly in classical and quantum complexity theory. Even more specifically, I like to work with CSPs and their <span class="bold quantum">quantum</span> and <span class="bold sampling">sampling</span> generalizations. Recently, I have been thinking about what makes low energy states of local Hamiltonians complex and local-to-global theorems for Markov chain mixing.</p>
         <br><br>
-    </section>
-
-    <section id="writing">
-        <h2 style="padding-bottom: 24px;">Publications</h2>
         <section class="subsection" id="pubinfo">
           <ul class="cleanul">
-          <li>
+          <li class="publicationli sampling">
+            <p class="publicationtitle">Sampling from the Hardcore Model on Random Regular Bipartite Graphs above the Uniqueness Threshold</p>
+            <p class="publicationauthors">Nicholas Kocurek, <a href="https://homes.cs.washington.edu/~shayan/" class="inverselink">Shayan Oveis Gharan</a>, Dante Tjowasi</p>
+            <p class="publicationform">Manuscript</p>
+            <p class="publicationlink">[<a href="https://arxiv.org/abs/2604.21847" class="arxivlink">arXiv</a>]</p>
+          </li>
+          <li class="publicationli quantum">
             <p class="publicationtitle">Spectral Certificates and Sum-of-Squares Lower Bounds for Semirandom Hamiltonians</p>
             <p class="publicationauthors">Nicholas Kocurek</p>
             <p class="publicationform">Manuscript</p>
-            <p class="publicationlink">[<a href="https://arxiv.org/abs/2511.02264" class="funpurplelink">arXiv</a>]</p>
+            <p class="publicationlink">[<a href="https://arxiv.org/abs/2511.02264" class="arxivlink">arXiv</a>]</p>
           </li>
-          <li>
+          <li class="publicationli sampling">
             <p class="publicationtitle">Sampling and Identity-Testing Without Approximate Tensorization of Entropy</p>
-            <p class="publicationauthors">William Gay, <a href="https://wrhe.github.io/"  class="funlink">William He</a>, Nicholas Kocurek, <a href="https://www.cs.cmu.edu/~odonnell/"  class="funlink">Ryan O'Donnell</a></p>
+            <p class="publicationauthors">William Gay, <a href="https://wrhe.github.io/"  class="inverselink separated">William He</a>, Nicholas Kocurek, <a href="https://www.cs.cmu.edu/~odonnell/"  class="inverselink">Ryan O'Donnell</a></p>
             <p class="publicationform">Manuscript</p>
-            <p class="publicationlink">[<a href="https://arxiv.org/abs/2506.23456" class="funpurplelink">arXiv</a>]</p>
+            <p class="publicationlink">[<a href="https://arxiv.org/abs/2506.23456" class="arxivlink">arXiv</a>]</p>
           </li>
-          <li>
+          <li class="publicationli quantum">
             <p class="publicationtitle">Spectral Refutations of Semirandom 𝑘-LIN over Larger Fields</p>
-            <p class="publicationauthors">Nicholas Kocurek, <a href="https://www.math.ias.edu/~pmanohar/"  class="funlink">Peter Manohar</a></p>
+            <p class="publicationauthors">Nicholas Kocurek, <a href="https://www.math.ias.edu/~pmanohar/"  class="inverselink separated">Peter Manohar</a></p>
             <p class="publicationform">APPROX 2025</p>
-            <p class="publicationlink">[<a href="https://arxiv.org/abs/2508.18185" class="funpurplelink">arXiv</a>]</p>
+            <p class="publicationlink">[<a href="https://arxiv.org/abs/2508.18185" class="arxivlink">arXiv</a>]</p>
           </li>
-          <li>
+          <li class="publicationli sampling">
             <p class="publicationtitle">Pseudorandomness Properties of Random Reversible Circuits</p>
-            <p class="publicationauthors">William Gay, <a href="https://wrhe.github.io/"  class="funlink">William He</a>, Nicholas Kocurek, <a href="https://www.cs.cmu.edu/~odonnell/"  class="funlink">Ryan O'Donnell</a></p>
+            <p class="publicationauthors">William Gay, <a href="https://wrhe.github.io/"  class="inverselink separated">William He</a>, Nicholas Kocurek, <a href="https://www.cs.cmu.edu/~odonnell/"  class="inverselink">Ryan O'Donnell</a></p>
             <p class="publicationform">CRYPTO 2025</p>
-            <p class="publicationlink">[<a href="https://arxiv.org/abs/2502.07159" class="funpurplelink">arXiv</a>]</p>
+            <p class="publicationlink">[<a href="https://arxiv.org/abs/2502.07159" class="arxivlink">arXiv</a>]</p>
           </li>
         </ul>
-        <br>
         </section>
+        <br><br>
+    </section>
+
+    <section id="acknowledgements">
+      <h2>Acknowledgements</h2>
+      <p>My research is supported by an <a href="https://www.nsfgrfp.org/" class="boldlink">NSF Graduate Research Fellowship</a>. Summer 2026, I am grateful to be hosted by the <a href="https://simons.berkeley.edu/homepage" class="boldlink separated">Simons Institute</a> as a visiting student for the <a href="https://simons.berkeley.edu/programs/summer-cluster-quantum-computing-2026" class="boldlink bunched">Summer Cluster on Quantum Computing 2026</a>.</p>
+      <br><br>
     </section>
 
     <section id="teaching">
         <h2>Teaching</h2>
         <section class="subsection" id="teachinginfo">
           <p>I have been a teaching assistant for the following courses:</p>
-          <ul>
-            <li>[<span class="uw">UW</span>] <a href="https://courses.cs.washington.edu/courses/cse531/26sp/" class="normallink">CSE531: Computational Complexity</a> (Spring 2026)</li>
-            <li>[<span class="cmu">CMU</span>] <a href="https://www.cs251.com/" class="normallink">15-251: Great Ideas in Theoretical Computer Science</a> (Fall 2022-Spring 2025)</li>
-            <li>[<span class="cmu">CMU</span>] <a href="https://www.cs.cmu.edu/~mgit/" class="normallink">15-252: More Great Ideas in Theoretical Computer Science</a> (Fall 2024)</li>
-            <li>[<span class="cmu">CMU</span>] <a href="https://www.cs.cmu.edu/~cdm/index.html" class="normallink">15-354: Computational Discrete Math</a> (Fall 2024)</li>
-            <li>[<span class="cmu">CMU</span>] <a href="https://www.cs.cmu.edu/~15455/" class="normallink">15-455: Undergraduate Complexity Theory</a> (Spring 2024, Spring 2025)</li>
+          <ul class="cleanulshort">
+            <li class="uwli"><p class="bullet"><span class="semibold">[</span><span class="uw">UW</span><span class="semibold">]</span> <a href="https://courses.cs.washington.edu/courses/cse531/26sp/" class="normallinklarge">CSE531: Computational Complexity</a> (Spring 2026)</p></li>
+            <li class="cmuli"><p class="bullet"><span class="semibold">[</span><span class="cmu">CMU</span><span class="semibold">]</span> <a href="https://www.cs251.com/" class="cmulink">15-251: Great Ideas in Theoretical Computer Science</a> (Fall 2022-Spring 2025)</p></li>
+            <li class="cmuli"><p class="bullet"><span class="semibold">[</span><span class="cmu">CMU</span><span class="semibold">]</span> <a href="https://www.cs.cmu.edu/~mgit/" class="cmulink">15-252: More Great Ideas in Theoretical Computer Science</a> (Fall 2024)</p></li>
+            <li class="cmuli"><p class="bullet"><span class="semibold">[</span><span class="cmu">CMU</span><span class="semibold">]</span> <a href="https://www.cs.cmu.edu/~cdm/index.html" class="cmulink">15-354: Computational Discrete Math</a> (Fall 2024)</p></li>
+            <li class="cmuli"><p class="bullet"><span class="semibold">[</span><span class="cmu">CMU</span><span class="semibold">]</span> <a href="https://www.cs.cmu.edu/~15455/" class="cmulink bunched">15-455: Undergraduate Complexity Theory</a> (Spring 2024, Spring 2025)</p></li>
           </ul>
-          <br>
         </section>
+        <br><br><br>
     </section>
 
     <section id="misc">
       <h2>Miscellaneous</h2>
       <section class="subsection" id="miscinfo">
         <p>I am a big fan of <button class="button" onclick="showOrHide()">animation</button>, 
-        <span class="black">P</span><span class="yellow">i</span><span class="black">t</span><span class="yellow">t</span><span class="black">s</span><span class="yellow">b</span><span class="black">u</span><span class="yellow">r</span><span class="black">g</span><span class="yellow">h</span> <span class="black">s</span><span class="yellow">p</span><span class="black">o</span><span class="yellow">r</span><span class="black">t</span><span class="yellow">s</span>, <a href="https://en.wikipedia.org/wiki/Analysis_of_Boolean_functions#Kahn%E2%80%93Kalai%E2%80%93Linial_theorem" class="funlink">social deduction games</a>, and mystery novels.</p>
+        <span class="black">P</span><span class="yellow">i</span><span class="black">t</span><span class="yellow">t</span><span class="black">s</span><span class="yellow">b</span><span class="black">u</span><span class="yellow">r</span><span class="black">g</span><span class="yellow">h</span> <span class="black">s</span><span class="yellow">p</span><span class="black">o</span><span class="yellow">r</span><span class="black">t</span><span class="yellow">s</span>, <a href="https://en.wikipedia.org/wiki/Analysis_of_Boolean_functions#Kahn%E2%80%93Kalai%E2%80%93Linial_theorem" class="normallink bunched">social deduction games</a>, and mystery novels.</p>
         <div>
             <img id="arcane" src="media/arcane.jpg" class="animation" style="display: none;" onclick="reroll()">
             <img id="drstone" src="media/dr_stone.jpg" class="animation" style="display: none;" onclick="reroll()">
@@ -161,15 +180,11 @@
         </div>
       <p>I pronounce my last name "koh-sir-ick".</p>
       <p>
-        <span class="imagetooltip">Here<span class="tooltipimage"><img src="media/kolache.jpg" style="width: 100%;"></span></span> is a simple diagram explaining the strange etymology of "kolache" in Texas.</p>
+        <span class="imagetooltip semibold">Here<span class="tooltipimage"><img src="media/kolache.jpg" style="width: 100%;"></span></span> is a simple diagram explaining the strange etymology of "kolache" in Texas.</p>
       <br><br><br><br>
       </section class="subsection">
     </section>
   </div>
 </div>
-<footer>
-  <div class="footer">
-  </div>
-</footer>
 </body>
 </html>
