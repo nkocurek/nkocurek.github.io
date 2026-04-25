@@ -63,6 +63,12 @@ div {
     padding-bottom: 8%;
 }
 
+@media screen and (max-width: 1080px) {
+    #misc {
+        padding-bottom: 4%;
+    }
+}
+
 #title {
     color: var(--title-color);
 }
