@@ -349,6 +349,13 @@ td {
     padding-bottom: 1%;
 }
 
+@media screen and (max-width: 1080px) {
+    .publicationli {
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
+    }
+}
+
 .quantum {
     border-color: var(--uw-primary);
     color: var(--uw-primary);
@@ -383,7 +390,6 @@ td {
 
 .publicationtitle {
     padding: 0px;
-    margin-left: 1.5%;
     margin-top: 0px;
     margin-bottom: 0px;
     line-height: 1.5;
@@ -394,7 +400,6 @@ td {
 
 .publicationauthors {
     padding: 0px;
-    margin-left: 1.5%;
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 15px;
@@ -404,7 +409,6 @@ td {
 
 .publicationform {
     padding: 0px;
-    margin-left: 1.5%;
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 15px;
@@ -414,12 +418,21 @@ td {
 
 .publicationlink {
     padding: 0px;
-    margin-left: 1.5%;
     margin-top: 0px;
     margin-bottom: 1%;
     color: var(--base-text-color);
     font-size: 15px;
     line-height: 1.5;
+}
+
+.pubspacing {
+    margin-left: 1.5%;
+}
+
+@media screen and (max-width: 1080px) {
+    .pubspacing {
+        margin-left: 2%;
+    }
 }
 
 .bullet { 
