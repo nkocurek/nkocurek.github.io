@@ -88,11 +88,11 @@ h2 {
     font-weight: 450;
     margin-bottom: 0%;
     margin-top: 0%;
-    padding-bottom: 1%;
+    padding-bottom: 0.5%;
     padding-top: 0%;
     text-decoration: underline;
     text-decoration-color: var(--uw-secondary);
-    text-decoration-thickness: 4px;
+    text-decoration-thickness: 0px;
     text-underline-offset: 5px;
 }
 
@@ -140,6 +140,16 @@ p {
 a {
     font-family: 'Noto Sans JP', sans-serif;
     text-decoration: none;
+}
+
+.gradient span {
+  background: linear-gradient(0deg, var(--uw-secondary) 0%, var(--uw-secondary) 12%, var(--background-color) 12%);
+}
+
+.padding span {
+  padding-bottom: 0.25%;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
 a:hover {
@@ -214,6 +224,15 @@ td {
     line-height: 1;
     font-weight: 325;
     color: var(--uw-tertiary);
+}
+
+.link {
+    color: var(--base-text-color);
+    font-weight: 300;
+}
+
+.link:hover {
+    text-decoration: none;
 }
 
 .normallink {
@@ -294,11 +313,11 @@ td {
 }
 
 .arxivlink {
-    color: var(--uw-tertiary);
-    font-weight: 300;
+    color: var(--title-color);
+    font-weight: 325;
     text-decoration: underline;
     text-underline-offset: 3.5px;
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 2.5px;
     text-decoration-color: var(--uw-secondary);
 }
 
@@ -385,8 +404,8 @@ td {
     margin-left: 2%;
     margin-top: 0px;
     margin-bottom: 1%;
-    font-size: 15px;
     color: var(--base-text-color);
+    font-size: 15px;
     line-height: 1.5;
 }
 
