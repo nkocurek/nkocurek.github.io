@@ -283,6 +283,19 @@ td {
     text-decoration-color: var(--uw-secondary);
 }
 
+.authorlink {
+    color: var(--base-text-color);
+    font-weight: 300;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--uw-secondary);
+}
+
+.authorlink:hover {
+    text-decoration: none;
+}
+
 .inverselink {
     color: var(--base-text-color);
     font-weight: 300;
@@ -314,10 +327,10 @@ td {
 
 .arxivlink {
     color: var(--uw-primary);
-    font-weight: 325;
+    font-weight: 300;
     text-decoration: underline;
     text-underline-offset: 3.5px;
-    text-decoration-thickness: 2.5px;
+    text-decoration-thickness: 2px;
     text-decoration-color: var(--uw-secondary);
 }
 
