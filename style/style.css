@@ -313,7 +313,7 @@ td {
 }
 
 .arxivlink {
-    color: var(--title-color);
+    color: var(--uw-primary);
     font-weight: 325;
     text-decoration: underline;
     text-underline-offset: 3.5px;
@@ -370,7 +370,7 @@ td {
 
 .publicationtitle {
     padding: 0px;
-    margin-left: 2%;
+    margin-left: 1.5%;
     margin-top: 0px;
     margin-bottom: 0px;
     line-height: 1.5;
@@ -381,7 +381,7 @@ td {
 
 .publicationauthors {
     padding: 0px;
-    margin-left: 2%;
+    margin-left: 1.5%;
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 15px;
@@ -391,7 +391,7 @@ td {
 
 .publicationform {
     padding: 0px;
-    margin-left: 2%;
+    margin-left: 1.5%;
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 15px;
@@ -401,7 +401,7 @@ td {
 
 .publicationlink {
     padding: 0px;
-    margin-left: 2%;
+    margin-left: 1.5%;
     margin-top: 0px;
     margin-bottom: 1%;
     color: var(--base-text-color);
