@@ -69,7 +69,7 @@ div {
     }
 }
 
-.title {
+#title {
     color: var(--title-color);
 }
 
