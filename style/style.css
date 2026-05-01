@@ -327,9 +327,8 @@ td {
 
 .arxivlink {
     color: var(--title-color);
-    font-weight: 300;
     text-decoration: underline;
-    text-underline-offset: 3.5px;
+    text-underline-offset: 4px;
     text-decoration-thickness: 2px;
     text-decoration-color: var(--uw-secondary);
 }
