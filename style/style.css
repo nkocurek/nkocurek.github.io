@@ -527,12 +527,21 @@ td {
 }
 
 .firstcolumn {
-    width: 50%;
+    width: 49%;
 }
 
 .secondcolumn {
-    width: 25%;
-    min-width: 375px;
+    width: 51%;
+}
+
+@media screen and (max-width: 1080px) {
+    .firstcolumn {
+        width: 40%;
+    }
+
+    .secondcolumn {
+        width: 60%;
+    }
 }
 
 .profilepic {
@@ -544,6 +553,10 @@ td {
     display: none;
 }
 
+#mobiletable {
+    display: none;
+}
+
 #rowcode {
     padding-bottom: 6%;
 }
@@ -551,6 +564,10 @@ td {
 @media screen and (max-width: 1080px) {
     #desktoptable {
         display: none;
+    }
+
+    #mobiletable {
+        display: block;
     }
 
     .profilepic {
