@@ -3,8 +3,8 @@
     --background-color-highlight: #fbfbfb;
     --base-text-color: #303030;
     --title-color: #101010;
-    --secondary-color: #f9f9f9;
-    --secondary-color-highlight: #f5f5f5;
+    --secondary-color: #f5f5f5;
+    --secondary-color-highlight: #e5e5e5;
     --steelers-black: #101820;
     --steelers-yellow: #ffb612;
     --uw-primary: #32006e;
@@ -429,7 +429,7 @@ td {
     margin-top: 0.75%;
     padding-top: 0.5px;
     padding-bottom: 0.5px;
-    background-color: var(--secondary-color-highlight);
+    background-color: var(--secondary-color);
     border-width: 0px 0px 2px 0px;
     border-color: var(--uw-secondary);
     border-style: solid;
@@ -440,7 +440,9 @@ td {
 }
 
 .publicationbutton:hover {
-    background-color: var(--uw-secondary);
+    border-color: var(--secondary-color);
+    border-style: solid;
+    transition: 0s; 
 }
 
 .pubspacing {
