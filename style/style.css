@@ -327,14 +327,14 @@ td {
 
 .arxivlink {
     color: var(--title-color);
+    text-decoration: none;
+}
+
+.arxivlink:hover {
     text-decoration: underline;
     text-underline-offset: 4px;
     text-decoration-thickness: 2px;
     text-decoration-color: var(--uw-secondary);
-}
-
-.arxivlink:hover {
-    text-decoration: none;
 }
 
 .publicationli {
@@ -412,7 +412,6 @@ td {
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 15px;
-    color: var(--base-text-color);
     line-height: 1.5;
 }
 
@@ -446,6 +445,7 @@ td {
 
 .pubspacing {
     margin-left: 1.5%;
+    margin-bottom: 2px;
 }
 
 @media screen and (max-width: 1080px) {
