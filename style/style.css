@@ -330,7 +330,7 @@ td {
     color: var(--title-color);
     font-weight: 325;
     text-decoration: underline;
-    text-underline-offset: 4px;
+    text-underline-offset: 5px;
     text-decoration-thickness: 2px;
     text-decoration-color: var(--uw-secondary);
 }
