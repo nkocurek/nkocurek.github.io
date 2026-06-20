@@ -9,6 +9,7 @@
     --steelers-yellow: #ffb612;
     --uw-primary: #32006e;
     --uw-secondary: #c5b4e3;
+    --uw-secondary-secondary: hsl(262, 46%, 92%);
     --uw-tertiary: #4b2e83;
     --uw-quaternary: #b7a57a;
     --uw-quintary: #85754d;
@@ -144,7 +145,7 @@ a {
 }
 
 .gradient span {
-  background: linear-gradient(0deg, var(--uw-secondary) 0%, var(--uw-secondary) 12%, var(--background-color) 12%);
+  background: linear-gradient(to top, transparent 5%, var(--uw-secondary-secondary) 5%, var(--uw-secondary-secondary) 30%, transparent 30%);
 }
 
 .padding span {
