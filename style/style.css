@@ -205,6 +205,18 @@ td {
     color: var(--cmu-primary);
 }
 
+.uwlink {
+    color: var(--base-text-color);
+    font-weight: 300;
+}
+
+.uwlink:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2.5px;
+    text-decoration-color: var(--uw-secondary);
+}
+
 .cmulink {
     color: var(--base-text-color);
     font-weight: 300;
