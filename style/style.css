@@ -18,11 +18,11 @@
     --steelers-yellow: #ffb612;
 
     --halloween-orange: orange;
-    --halloween-orange-light: rgb(255, 229, 181);
+    --halloween-ghost: rgb(225, 225, 225);
 
     --accent-primary: var(--title-color);
     --accent-secondary: var(--halloween-orange);
-    --accent-secondary-light: var(--halloween-orange-light);
+    --accent-secondary-light: var(--halloween-ghost);
     --accent-tertiary : var(--halloween-orange);
     --accent-quaternary: var(--halloween-orange);
 }
